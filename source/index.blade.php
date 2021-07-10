@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-    @foreach ($posts->where('featured', true) as $featuredPost)
+    @foreach ($posts->where('date', true)->take(1) as $featuredPost)
         <div class="w-full mb-6">
             @if ($featuredPost->cover_image)
                 <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
@@ -24,14 +24,10 @@
             </a>
         </div>
 
-        @if (! $loop->last)
-            <hr class="border-b my-6">
-        @endif
+        <hr class="border-b my-6">
     @endforeach
 
-    @include('_components.newsletter-signup')
-
-    @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
+    @foreach ($posts->where('date', true)->skip(1)->chunk(2) as $row)
         <div class="flex flex-col md:flex-row md:-mx-6">
             @foreach ($row as $post)
                 <div class="w-full md:w-1/2 md:mx-6">
