@@ -13,4 +13,9 @@
         class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/contact') ? 'active text-blue-600' : '' }}">
         Contact
     </a>
+
+    <a title="{{ $page->siteName }} Contact" href="/privacy"
+       class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/privacy') ? 'active text-blue-600' : '' }}">
+        Privacy
+    </a>
 </nav>
