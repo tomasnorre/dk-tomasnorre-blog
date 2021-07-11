@@ -6,7 +6,12 @@
 
 @section('body')
     @if ($page->cover_image)
-        <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+        <figure class="mb-4 text-center">
+            <img src="{{ $page->cover_image }}" alt="{{ $page->title }}" class="mb-2 rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            @if ($page->cover_credit)
+                <figcaption class="text-sm">{!! $page->cover_credit !!}</figcaption>
+            @endif
+        </figure>
     @endif
 
     <h1 class="leading-none mb-2">{{ $page->title }}</h1>

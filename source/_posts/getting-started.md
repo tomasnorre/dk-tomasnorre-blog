@@ -5,6 +5,7 @@ title: Getting Started
 date: 2018-12-25
 description: Getting started with the Jigsaw blog starter template
 cover_image: /assets/img/post-cover-image-2.png
+cover_credit: 'Photo by <a href="https://unsplash.com/@xps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">XPS</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 featured: true
 categories: [configuration]
 ---
