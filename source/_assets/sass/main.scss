@@ -11,3 +11,14 @@
 @import 'blog';
 
 @tailwind utilities;
+
+// Setting up Custom fonts
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/assets/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NunitoSans';
+  src: url('/assets/font/NunitoSans-Regular.ttf') format('truetype');
+}

@@ -19,10 +19,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          'Nunito Sans'
+          'NunitoSans'
         ],
         mono: [
-          'monospace',
+          'JetBrainsMono',
         ],
       },
       lineHeight: {

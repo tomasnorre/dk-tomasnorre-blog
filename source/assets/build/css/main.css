@@ -523,7 +523,7 @@ ul {
  */
 
 html {
-  font-family: Nunito Sans; /* 1 */
+  font-family: NunitoSans; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -659,7 +659,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace;
+  font-family: JetBrainsMono;
 }
 
 /**
@@ -11331,7 +11331,7 @@ pre code {
 }
 
 .font-sans{
-  font-family: Nunito Sans;
+  font-family: NunitoSans;
 }
 
 .font-serif{
@@ -11339,7 +11339,7 @@ pre code {
 }
 
 .font-mono{
-  font-family: monospace;
+  font-family: JetBrainsMono;
 }
 
 .font-hairline{
@@ -23228,6 +23228,18 @@ pre code {
   transition: all .5s ease-out;
 }
 
+@font-face {
+  font-family: "JetBrainsMono";
+
+  src: url("/assets/font/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NunitoSans";
+
+  src: url("/assets/font/NunitoSans-Regular.ttf") format("truetype");
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -33553,7 +33565,7 @@ pre code {
   }
 
   .sm\:font-sans{
-    font-family: Nunito Sans;
+    font-family: NunitoSans;
   }
 
   .sm\:font-serif{
@@ -33561,7 +33573,7 @@ pre code {
   }
 
   .sm\:font-mono{
-    font-family: monospace;
+    font-family: JetBrainsMono;
   }
 
   .sm\:font-hairline{
@@ -55702,7 +55714,7 @@ pre code {
   }
 
   .md\:font-sans{
-    font-family: Nunito Sans;
+    font-family: NunitoSans;
   }
 
   .md\:font-serif{
@@ -55710,7 +55722,7 @@ pre code {
   }
 
   .md\:font-mono{
-    font-family: monospace;
+    font-family: JetBrainsMono;
   }
 
   .md\:font-hairline{
@@ -77851,7 +77863,7 @@ pre code {
   }
 
   .lg\:font-sans{
-    font-family: Nunito Sans;
+    font-family: NunitoSans;
   }
 
   .lg\:font-serif{
@@ -77859,7 +77871,7 @@ pre code {
   }
 
   .lg\:font-mono{
-    font-family: monospace;
+    font-family: JetBrainsMono;
   }
 
   .lg\:font-hairline{
@@ -100000,7 +100012,7 @@ pre code {
   }
 
   .xl\:font-sans{
-    font-family: Nunito Sans;
+    font-family: NunitoSans;
   }
 
   .xl\:font-serif{
@@ -100008,7 +100020,7 @@ pre code {
   }
 
   .xl\:font-mono{
-    font-family: monospace;
+    font-family: JetBrainsMono;
   }
 
   .xl\:font-hairline{
