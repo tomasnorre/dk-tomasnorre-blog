@@ -1,2 +1,3 @@
-# dk-tomasnorre-blogtest
-This is a repository for my blog test with netlify
+# blog.tomasnorre.dk
+
+This is the repository for my blog.
