@@ -15,6 +15,8 @@ I have been quiet, regarding blogging, for quite some time now. I have always wa
 Someone ones said:
 
 > Practice makes perfect
+
+The last year I have been doing more and more new and unknown tasks to me, and I want to share some of my learnings from this.
   
 I've been ask to do some small blog post and my learnings, So I'll rejoin the blogging world and try to share some of my knowledge. 
 
