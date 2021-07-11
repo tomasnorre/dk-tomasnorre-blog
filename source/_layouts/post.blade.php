@@ -7,7 +7,7 @@
 @section('body')
     @if ($page->cover_image)
         <figure class="mb-4 text-center">
-            <img src="{{ $page->cover_image }}" alt="{{ $page->title }}" class="mb-2 rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <img src="{{ $page->cover_image }}" alt="{{ $page->title }}" class="mb-2 rounded">
             @if ($page->cover_credit)
                 <figcaption class="text-sm">{!! $page->cover_credit !!}</figcaption>
             @endif
