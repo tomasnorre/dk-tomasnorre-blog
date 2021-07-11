@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://blogtest.tomasnorre.dk',
+    'baseUrl' => 'https://blog.tomasnorre.dk',
     'production' => true,
 ];
