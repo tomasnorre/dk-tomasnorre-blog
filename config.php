@@ -6,7 +6,7 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteName' => 'Tomas Norre\'s Blog',
-    'siteDescription' => 'Thougths, Ideas and Random Stuff',
+    'siteDescription' => 'Thoughts, Ideas and Random Stuff',
     'siteAuthor' => 'Tomas Norre',
 
     // collections
