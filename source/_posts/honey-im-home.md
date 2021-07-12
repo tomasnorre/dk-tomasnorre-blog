@@ -7,6 +7,7 @@ description: A little post about me getting back to write blog posts
 cover_image: /assets/img/posts/honey-im-home.jpg
 cover_credit: 'Photo by <a href="https://unsplash.com/@srosinger3997?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samantha Gades</a> on <a href="https://unsplash.com/s/photos/honey-i%27m-home?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 featured: true
+categories: [blog]
 ---
 
 I have been quiet, regarding blogging, for quite some time now. I have always wanted to write more even though I'm not great at it.
