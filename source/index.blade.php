@@ -3,8 +3,11 @@
 @section('body')
     @foreach ($posts->where('date', true)->take(1) as $featuredPost)
         <div class="w-full mb-6">
+
             @if ($featuredPost->cover_image)
-                <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
+                <div class="relative pb-2/6">
+                    <img src="{{ $featuredPost->cover_image }}" alt="Cover Image: {{ $featuredPost->title }}" class="absolute h-full w-full object-cover">
+                </div>
             @endif
 
             <p class="text-gray-700 font-medium my-2">
