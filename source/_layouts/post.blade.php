@@ -35,7 +35,7 @@
     </div>
 
     <div class="rounded-2xl px-3 py-3 bg-green-300 text-green-800 font-bold text-base mb-10">
-        If you find any typos or incorrect information, please reach out on <a href="https://github.com/tomasnorre/">GitHub</a> so that we can have the mistake corrected.
+        If you find any typos or incorrect information, please reach out on <a href="https://github.com/tomasnorre/dk-tomasnorre-blog">GitHub</a> so that we can have the mistake corrected.
     </div>
 
     <nav class="flex justify-between text-sm md:text-base">
