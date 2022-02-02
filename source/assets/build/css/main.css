@@ -28210,6 +28210,10 @@ pre code {
   src: url("/assets/font/NunitoSans-Regular.ttf") format("truetype");
 }
 
+.content ul > li {
+  margin-left: 40px;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

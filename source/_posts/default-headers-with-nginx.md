@@ -58,12 +58,3 @@ With the `PHP` file setting the header to `X-Frame-Options: DENY` Nginx will let
 
 I believe that it's the responsibility of the application to set the correct `Headers`, but I think it can be helpful
 on server level to set a default, that catches potential security issues, if not set.
-
-
-
-
-
-
-
-
-
