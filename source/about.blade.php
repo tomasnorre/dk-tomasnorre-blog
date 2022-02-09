@@ -8,7 +8,7 @@ description: A little bit about the site
     <h1>About</h1>
 
     <p class="mb-6">
-        Hi, My name is Tomas. I have been working with software development since early 2000. I'm born and raised in Denmark, but lives in Germany since 2013.
+        Hi, My name is Tomas. I'm European with a Danish passport. I have been working with software development since early 2000. I'm born and raised in Denmark. I lived in Germany from June 2013 to February 2022, but now I'm back home in Denmark.
     </p>
 
     <p class="mb-6">
