@@ -1,13 +1,13 @@
 FROM composer:2 as vendor
 
-WORKDIR /tmp
 COPY . /tmp
+WORKDIR /tmp
 RUN composer install
 
 FROM node:16
 
-WORKDIR /tmp
 COPY . /tmp
+WORKDIR /tmp
 RUN npm install && npm run prod
 
 RUN ls -la
