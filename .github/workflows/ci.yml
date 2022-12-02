@@ -28,6 +28,11 @@ jobs:
       - name: Composer install
         run: composer install
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install && npm run prod
+
       - name: Log in to Docker Registry
         uses: docker/login-action@v2
         with:
