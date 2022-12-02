@@ -38,14 +38,13 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Container
-        run: docker build -t docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA .
+        run: docker build -t docker.tomasnorre.dk/dk-tomasnorre-blog:latest .
+        #run: docker build -t docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA .
 
       - name: Push Container to Registry
-        run: |
-          docker tag docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA docker.tomasnorre.dk/dk-tomasnorre-blog:latest
-          docker push docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA
-          docker push docker.tomasnorre.dk/dk-tomasnorre-blog:latest
-          
+        run: docker push docker.tomasnorre.dk/dk-tomasnorre-blog:latest
+          #docker tag docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA docker.tomasnorre.dk/dk-tomasnorre-blog:latest
+          #docker push docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA
 
   Deploy:
     runs-on: ubuntu-22.04
