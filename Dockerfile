@@ -10,6 +10,9 @@ WORKDIR /tmp
 COPY . /tmp
 RUN npm install && npm run prod
 
+RUN ls -la
+RUN ls -ls build_production/
+
 FROM nginx:alpine
 WORKDIR /tmp
 COPY build_production/. /usr/share/nginx/html
