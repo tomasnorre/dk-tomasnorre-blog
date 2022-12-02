@@ -13,3 +13,4 @@ RUN npm install && npm run prod
 FROM nginx:alpine
 WORKDIR /tmp
 COPY build_production/. /usr/share/nginx/html
+COPY source/assets/robots.txt /usr/share/nginx/html/robots.txt
