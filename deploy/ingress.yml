@@ -28,7 +28,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: site-dk-tomasnorre-blog
+  name: site-dk-tomasnorre-blog-redirect
   namespace: default
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web
