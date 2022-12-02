@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: site-dk-tomasnorre-blog
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
