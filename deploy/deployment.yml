@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: site-dk-tomasnorre-blog
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: site-dk-tomasnorre-blog
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: site-dk-tomasnorre-blog
+    spec:
+      containers:
+        - name: blog
+          image: docker.tomasnorre.dk/dk-tomasnorre-blog:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: registrycredentials
