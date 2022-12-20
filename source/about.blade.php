@@ -19,6 +19,4 @@ description: A little bit about the site
         You can reach out to me on <a href="https://twitter.com/tomasnorre">Twitter</a>, <a rel="me" href="https://phpc.social/@tomasnorre">Mastodon</a> or <a
                 href="https://github.com/tomasnorre">GitHub</a> if any questions or comments.
     </p>
-
 @endsection
-
