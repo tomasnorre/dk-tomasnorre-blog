@@ -19,7 +19,7 @@ jobs:
       - name: Set up PHP Version 8.0
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.0
+          php-version: 8.1
           tools: composer:v2
 
       - name: Composer install
@@ -39,12 +39,9 @@ jobs:
 
       - name: Build Container
         run: docker build -t docker.tomasnorre.dk/dk-tomasnorre-blog:latest .
-        #run: docker build -t docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA .
 
       - name: Push Container to Registry
         run: docker push docker.tomasnorre.dk/dk-tomasnorre-blog:latest
-          #docker tag docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA docker.tomasnorre.dk/dk-tomasnorre-blog:latest
-          #docker push docker.tomasnorre.dk/dk-tomasnorre-blog:$GITHUB_SHA
 
   Deploy:
     runs-on: ubuntu-22.04
