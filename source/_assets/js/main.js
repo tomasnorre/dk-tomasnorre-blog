@@ -2,6 +2,7 @@ window.axios = require('axios');
 import Vue from 'vue';
 import Search from './components/Search.vue';
 import hljs from 'highlight.js/lib/core';
+import 'boxicons'
 
 // Syntax highlighting
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
