@@ -55,3 +55,8 @@ jobs:
         with:
           args: apply -f deploy/ingress.yml -f deploy/service.yml -f deploy/deployment.yml -f deploy/certificate.yml
 
+      - uses: tomasnorre/gha-kubectl@v1
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+        with:
+          args: replace -f deploy/deployment.yml
