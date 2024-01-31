@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 // Code syntax highlighting,
 // powered by https://highlightjs.org
@@ -7,10 +8,7 @@
 
 @import 'base';
 @import 'navigation';
-@import 'mailchimp';
-@import 'blog';
 
-@tailwind utilities;
 
 // Setting up Custom fonts
 @font-face {
