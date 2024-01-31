@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @php
-    $page->type = 'article';
+    $page->addVariables(["type" => "article"]);
 @endphp
 
 @section('body')
