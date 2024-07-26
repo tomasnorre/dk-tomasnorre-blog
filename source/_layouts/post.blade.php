@@ -8,7 +8,7 @@
     @if ($page->cover_image)
         <div class="relative pb-2/6">
             <figure class="mb-4 text-center">
-                <img src="{{ $page->cover_image }}" alt="Cover Image: {{ $page->title }}" class="absolute h-full w-full object-cover rounded">
+                <img src="{{ $page->cover_image }}" alt="Cover Image: {{ $page->title }}" class="absolute h-full w-full object-cover rounded-2xl">
             </figure>
         </div>
         @if ($page->cover_credit)
@@ -18,7 +18,7 @@
 
     <h1 class="leading-none mb-2">{{ $page->title }}</h1>
 
-    <p class="text-gray-700 text-xl md:mt-0">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
+    <p class="text-gray-700 text-xl md:mt-0">{{ $page->author }}  •  <date>{{ date('F j, Y', $page->date) }}</date></p>
 
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)

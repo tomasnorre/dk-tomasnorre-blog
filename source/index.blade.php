@@ -6,13 +6,17 @@
 
             @if ($featuredPost->cover_image)
                 <div class="relative pb-2/6">
-                    <img src="{{ $featuredPost->cover_image }}" alt="Cover Image: {{ $featuredPost->title }}" class="absolute h-full w-full object-cover">
+                    <img
+                            src="{{ $featuredPost->cover_image }}"
+                            alt="Cover Image: {{ $featuredPost->title }}"
+                            class="absolute h-full w-full object-cover rounded-2xl"
+                    >
                 </div>
             @endif
 
-            <p class="text-gray-700 font-medium my-2">
+            <date class="text-gray-700 font-medium my-2">
                 {{ $featuredPost->getDate()->format('F j, Y') }}
-            </p>
+            </date>
 
             <h2 class="text-3xl mt-0">
                 <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">

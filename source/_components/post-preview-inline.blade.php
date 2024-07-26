@@ -1,7 +1,10 @@
 <div class="flex flex-col mb-4">
-    <p class="text-gray-700 font-medium my-2">
+    <div>
+        <img src="{{ $post->cover_image }}" class="rounded-2xl h-64 w-full" />
+    </div>
+    <date class="text-gray-700 font-medium my-2">
         {{ $post->getDate()->format('F j, Y') }}
-    </p>
+    </date>
 
     <h2 class="text-3xl mt-0">
         <a
