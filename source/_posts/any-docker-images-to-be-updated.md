@@ -6,6 +6,7 @@ date: 2022-02-02
 description: Check if any docker images should be updated
 cover_image: /assets/img/posts/any-docker-images-to-be-updated.jpg
 cover_credit: 'Photo by <a href="https://unsplash.com/@timelabpro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Timelab Pro</a> on <a href="https://unsplash.com/s/photos/container?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+cover_alt: 'Overview of a harbour with a lot of containers'
 featured: true
 categories: [devops]
 ---

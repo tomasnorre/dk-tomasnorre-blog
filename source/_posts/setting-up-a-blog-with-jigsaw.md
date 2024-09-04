@@ -5,8 +5,8 @@ title: Setting up a blog with Jigsaw
 date: 2021-07-28
 description: How to set up a simple blog
 cover_image: /assets/img/posts/setting-up-a-blog-with-jigsaw.jpg
-cover_credit: 'Photo by <a href="https://unsplash.com/@ashkfor121?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ashkan Forouzani</a> on <a href="https://unsplash.com/s/photos/jigsaw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-'
+cover_credit: 'Photo by <a href="https://unsplash.com/@ashkfor121?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ashkan Forouzani</a> on <a href="https://unsplash.com/s/photos/jigsaw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+cover_alt: 'Painted jigsaw'
 featured: false
 categories: [blog,development]
 ---

@@ -6,6 +6,7 @@ date: 2021-07-11
 description: A little post about me getting back to write blog posts
 cover_image: /assets/img/posts/honey-im-home.jpg
 cover_credit: 'Photo by <a href="https://unsplash.com/@srosinger3997?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samantha Gades</a> on <a href="https://unsplash.com/s/photos/honey-i%27m-home?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+cover_alt: 'A wall with a counter, flower, lamp and a clock hanging on the wall'
 featured: true
 categories: [blog]
 ---

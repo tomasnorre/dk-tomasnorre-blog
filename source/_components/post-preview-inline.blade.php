@@ -1,6 +1,6 @@
 <div class="flex flex-col mb-4">
     <div>
-        <img src="{{ $post->cover_image }}" class="rounded-2xl h-64 w-full" />
+        <img src="{{ $post->cover_image }}" class="rounded-2xl h-64 w-full"  alt="{{ $post->cover_alt }}"/>
     </div>
     <date class="text-gray-700 font-medium my-2">
         {{ $post->getDate()->format('F j, Y') }}

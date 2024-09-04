@@ -6,6 +6,7 @@ date: 2021-10-21
 description: Set default headers with Nginx
 cover_image: /assets/img/posts/nginx-headers.jpg
 cover_credit: 'Photo by <a href="https://unsplash.com/@carlheyerdahl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Carl Heyerdahl</a> on <a href="https://unsplash.com/s/photos/website?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+cover_alt: 'Office desk with iMac'
 featured: true
 categories: [devops]
 ---

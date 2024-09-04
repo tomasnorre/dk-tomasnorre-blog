@@ -25,12 +25,12 @@
             <a
                 href="{{ '/blog/categories/' . $category }}"
                 title="View posts in {{ $category }}"
-                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded-2xl mr-4 px-3 pt-px"
             >{{ $category }}</a>
         @endforeach
     @endif
 
-    <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+    <div class="border-b border-blue-200 mb-10 pb-4">
         @yield('content')
     </div>
 

@@ -6,6 +6,7 @@ date: 2021-10-24
 description: Setting up robots.txt in Jigsaw
 cover_image: /assets/img/posts/robots-txt.jpg
 cover_credit: 'Photo by <a href="https://unsplash.com/@phillipglickman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Phillip Glickman</a> on <a href="https://unsplash.com/s/photos/robot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+cover_alt: 'Green Robot in focus'
 featured: true
 categories: [blog]
 ---

@@ -8,7 +8,7 @@
                 <div class="relative pb-2/6">
                     <img
                             src="{{ $featuredPost->cover_image }}"
-                            alt="Cover Image: {{ $featuredPost->title }}"
+                            alt="{{ $featuredPost->cover_alt }}"
                             class="absolute h-full w-full object-cover rounded-2xl"
                     >
                 </div>
@@ -19,14 +19,21 @@
             </date>
 
             <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
+                <a
+                        href="{{ $featuredPost->getUrl() }}"
+                        title="Read {{ $featuredPost->title }}"
+                        class="text-gray-900 font-extrabold"
+                >
                     {{ $featuredPost->title }}
                 </a>
             </h2>
 
             <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
+            <a href="{{ $featuredPost->getUrl() }}"
+               title="Read - {{ $featuredPost->title }}"
+               class="uppercase tracking-wide mb-4"
+            >
                 Read
             </a>
         </div>
@@ -47,7 +54,7 @@
             @endforeach
         </div>
 
-        @if (! $loop->last)
+        @if (! $loop->last )
             <hr class="w-full border-b mt-2 mb-6">
         @endif
     @endforeach
