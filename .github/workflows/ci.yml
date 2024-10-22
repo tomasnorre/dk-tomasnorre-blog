@@ -53,9 +53,9 @@ jobs:
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
-          args: apply -f deploy/ingress.yml -f deploy/service.yml -f deploy/deployment.yml -f deploy/certificate.yml
+          args: apply -f deploy/ingress.yml -f deploy/service.yml -f deploy/deployment.yml -f deploy/certificate.yml --validate=false
       - uses: actions-hub/kubectl@master
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
-          args: delete pods -l app=site-dk-tomasnorre-blog -n default
+          args: delete pods -l app=site-dk-tomasnorre-blog -n default --validate=false
