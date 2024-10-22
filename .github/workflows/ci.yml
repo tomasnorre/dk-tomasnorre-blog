@@ -49,12 +49,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: tomasnorre/gha-kubectl@v1
+      - uses: actions-hub/kubectl@master
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
           args: apply -f deploy/ingress.yml -f deploy/service.yml -f deploy/deployment.yml -f deploy/certificate.yml
-      - uses: tomasnorre/gha-kubectl@v1
+      - uses: actions-hub/kubectl@master
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
