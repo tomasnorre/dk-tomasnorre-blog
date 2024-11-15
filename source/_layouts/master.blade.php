@@ -21,8 +21,10 @@
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-        
-        <script defer data-domain="blog.tomasnorre.dk" src="https://plausible.io/js/plausible.js"></script>
+
+        <!-- 100% privacy-first analytics -->
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
     </head>
 
     <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
