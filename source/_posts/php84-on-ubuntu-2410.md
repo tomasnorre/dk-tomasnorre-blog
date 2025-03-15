@@ -4,9 +4,9 @@ section: content
 title: PHP 8.4 on Ubuntu 24.10
 date: 2024-12-27
 description: PHP 8.4 on Ubuntu 24.10
-cover_image: /assets/img/posts/wifi-on-arch-linux.jpg
-cover_credit: 'Photo by <a href="https://unsplash.com/@lukash?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lukas</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-table-uZkHtWsi2dE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
-cover_alt: 'Laptop with Arch Linux sticker'
+cover_image: /assets/img/posts/php84-on-ubuntu-2410.jpg
+cover_credit: 'Photo by <a href="https://unsplash.com/@benofthenorth">Ben Griffiths</a> on <a href="https://unsplash.com/photos/blue-elephant-figurine-on-macbook-pro-Bj6ENZDMSDY">Unsplash</a>'
+cover_alt: 'Elephpant on MacBook'
 featured: true
 categories: [development,linux]
 ---
