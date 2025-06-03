@@ -8,3 +8,21 @@ updates:
       - "tomasnorre"
     assignees:
       - "tomasnorre"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "tomasnorre"
+    assignees:
+      - "tomasnorre"
+
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "tomasnorre"
+    assignees:
+      - "tomasnorre"
