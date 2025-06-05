@@ -64,12 +64,11 @@ jobs:
     runs-on: mcr.microsoft.com/playwright:v1.52.0-noble
     needs: Deploy
     steps:
+      - uses: 7th-green/gha-playwright@v1.0.0
       - uses: actions/checkout@v4
         env:
           BASE_URL: https://blog.tomasnorre.dk
       - name: Install dependencies
         run: npm ci
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: npx playwright test
