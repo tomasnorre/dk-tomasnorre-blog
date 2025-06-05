@@ -61,7 +61,7 @@ jobs:
           args: delete pods -l app=site-dk-tomasnorre-blog -n default
 
   Test:
-    runs-on: mcr.microsoft.com/playwright:v1.52.0-noble
+    runs-on: ubuntu-24.04
     needs: Deploy
     steps:
       - uses: 7th-green/gha-playwright@v1.0.0
