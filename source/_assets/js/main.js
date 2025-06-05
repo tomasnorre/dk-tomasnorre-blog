@@ -1,9 +1,13 @@
 import axios from 'axios';
 window.axios = axios;
 
-import { createApp } from 'vue';
+import Alpine from "alpinejs";
+import Fuse from "fuse.js";
 
-import Search from './components/Search.vue';
+window.Fuse = Fuse;
+window.Alpine = Alpine;
+Alpine.start();
+
 import hljs from 'highlight.js/lib/core';
 import 'highlight.js/styles/default.css';
 import 'boxicons';
@@ -21,11 +25,3 @@ hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 document.querySelectorAll('pre code').forEach((block) => {
     hljs.highlightElement(block); // Changed from highlightBlock to highlightElement in newer versions of highlight.js
 });
-
-const app = createApp({
-    components: {
-        Search,
-    }
-});
-
-app.mount('#vue-search');

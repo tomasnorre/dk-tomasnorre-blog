@@ -1,26 +1,26 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "mix",
-        "watch": "mix watch",
-        "staging": "NODE_ENV=staging mix",
-        "prod": "mix --production"
-    },
-    "devDependencies": {
-        "axios": "^1.9.0",
-        "fuse.js": "^7.1.0",
-        "highlight.js": "^11.11.1",
-        "laravel-mix": "^6.0.11",
-        "laravel-mix-jigsaw": "^2.0.0",
-        "postcss": "^8.5.1",
-        "sass": "^1.89.1",
-        "sass-loader": "^13.3.3",
-        "tailwindcss": "^2.2.16",
-        "vue": "^3.5.16",
-        "vue-loader": "^17.4.2",
-        "vue-template-compiler": "^2.7.16"
-    },
-    "dependencies": {
-        "boxicons": "^2.1.4"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "staging": "NODE_ENV=staging mix",
+    "prod": "mix --production"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29",
+    "alpinejs": "^3.14.1",
+    "axios": "^1.9.0",
+    "fuse.js": "^7.1.0",
+    "highlight.js": "^11.11.1",
+    "laravel-mix": "^6.0.11",
+    "laravel-mix-jigsaw": "^2.0.0",
+    "postcss": "^8.5.1",
+    "sass": "^1.89.1",
+    "sass-loader": "^13.3.3",
+    "tailwindcss": "^2.2.16"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
+  }
 }

@@ -34,7 +34,7 @@
                 </div>
 
                 <div id="vue-search" class="flex flex-1 justify-end items-center">
-                    <search></search>
+                    @include('_components.search')
 
                     @include('_nav.menu')
 
@@ -50,10 +50,10 @@
         </main>
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-                <p class="mb-8">
-                    <a href="https://twitter.com/tomasnorre"><box-icon type='logo' name='twitter'></box-icon></a>
-                    <a href="https://github.com/tomasnorre"><box-icon type='logo' name='github'></box-icon></a>
-                    <a rel="me" href="https://phpc.social/@tomasnorre"><box-icon type='logo' name='mastodon'></box-icon></a>
+                <p id="footer-links" class="mb-8">
+                    <a href="https://twitter.com/tomasnorre"><box-icon type='logo' name='Twitter'></box-icon></a>
+                    <a href="https://github.com/tomasnorre"><box-icon type='logo' name='GitHub'></box-icon></a>
+                    <a href="https://phpc.social/@tomasnorre"><box-icon type='logo' name='Mastodon'></box-icon></a>
                 </p>
             <ul class="flex flex-col md:flex-row justify-center list-none">
                 <li class="md:mr-2">
