@@ -68,7 +68,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install dependencies
         run: npm ci
-      - name: install dependencies
-        run: npx playwright install
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: BASE_URL=https://blog.tomasnorre.dk npx playwright test
