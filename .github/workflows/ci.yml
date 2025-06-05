@@ -61,15 +61,12 @@ jobs:
           args: delete pods -l app=site-dk-tomasnorre-blog -n default
 
   Test:
-    runs-on: ubuntu-24.04
+    runs-on: mcr.microsoft.com/playwright:v1.52.0-noble
     needs: Deploy
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
         env:
           BASE_URL: https://blog.tomasnorre.dk
-        with:
-          node-version: lts/*
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
