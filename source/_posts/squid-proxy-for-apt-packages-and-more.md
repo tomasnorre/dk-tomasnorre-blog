@@ -24,17 +24,17 @@ I'll show you have to set it up.
 
 ## Installation and Setup
 
-```shell 
+```bash
 $ sudo apt update
 $ sudo apt install squid
 ```
 Squid will automatically setup a service running in the background, you can check it out with
 
-```shell 
+```bash
 $ sudo systemctl status squid
 ```
 output should look something like this 
-```shell 
+```bash
 ● squid.service - Squid Web Proxy Server
      Loaded: loaded (/lib/systemd/system/squid.service; enabled; preset: enabled)
      Active: active (running) since Mon 2024-10-21 12:41:14 CEST; 3 weeks 4 days ago
@@ -95,7 +95,7 @@ refresh_all_ims on
 
 After adjusting the `/etc/squid/squid.conf` file, you would need to restart `squid`
 
-```shell
+```bash
 $ sudo systemctl restart squid
 ```
 

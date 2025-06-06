@@ -13,7 +13,7 @@ categories: [blog,development,typo3]
 
 The "latest" version of the `TYPO3 Crawler 12.0.6` comes with TYPO3 13 LTS support. It's been overdue for too long, but now it's out. 
 
-```shell 
+```txt
 Crawler 12.0.6 was released on January 23rd, 2025
 
 Added
@@ -26,7 +26,7 @@ Changed
 ```
 Only four days later, a new release was created `12.0.7` , which brought support for PHP 8.4.
 
-```shell 
+```txt
 Crawler 12.0.7 was released on January 27th, 2025
 
 Added
@@ -37,7 +37,7 @@ Both releases can be download from either [Packagist](https://packagist.org/pack
 
 I prefer installing it with [composer](https://getcomposer.org/):
 
-```shell 
+```bash
 composer require tomasnorre/crawler
 ```
 

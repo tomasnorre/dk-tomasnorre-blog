@@ -13,13 +13,12 @@ categories: [development,devops]
 
 Git is an amazing tool, I personally use a `git wip` alias all the time, which gives a nice overview of which branches have been worked on lately.
 
-```shell 
+```bash
 $ git wip
   6 months ago	ci-phpstan-fix
   4 months ago	bugfix/update-label
   4 days ago	v11.x
   2 days ago	main
-
 ```
 
 You can add following to your `~/.gitconfig` save and volá you're done, and ready to use it.

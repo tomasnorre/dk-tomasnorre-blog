@@ -16,7 +16,7 @@ This is a short intro on how to setup Wifi on Arch Linux.
 In your cli you need to run the `iwctl`
 
 
-```shell
+```bash
 root@archiso # iwctl
 NetworkConfigurationEnalbed: disabled
 StateDirectory: /var/lib/iwd
@@ -25,13 +25,13 @@ Version: 3.14
 
 The prompt will now look like this.
 
-```shell
+```bash
 [iwd]#
 ```
 
 Now type the following commands
 
-```shell
+```bash
 [iwd]# device list
 
                                     Devices                                    

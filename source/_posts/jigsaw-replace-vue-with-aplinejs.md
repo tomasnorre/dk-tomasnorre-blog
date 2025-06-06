@@ -23,11 +23,12 @@ I'll list the steps needed.
 4. Adjust your `webpack.mix.js`-file
 5. Update your `main.js`
 6. Update your css
-7. Recompile your site
+7. Delete old vue search component
+8. Recompile your site
 
 #### 1. Update your `package.json`
 
-```patch
+```diff
 -       "vue": "^3.5.16",
 -       "vue-loader": "^17.4.2",
 -       "vue-template-compiler": "^2.7.16"
@@ -183,9 +184,15 @@ I'll list the steps needed.
 [x-cloak] { display: none !important; }
 ```
 
-#### 7. Recompile your site
+#### 7. Delete old vue search component
 
-```shell
+```bash
+rm source/_assets/js/components/Search.vue
+```
+
+#### 8. Recompile your site
+
+```bash
 npm run dev
 npm run prod
 ```

@@ -15,7 +15,7 @@ I'm not a fan ouf touchscreen on my laptop, so I was looking for a way to disabl
 
 First we need to identify the VID (Vendor ID) and PID (Product ID), this can be done with `lsusb`.
 
-```shell
+```bash
 lsusb
 
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
@@ -33,7 +33,7 @@ I choose `99-disable-touchscreen.rules` to have it loaded as late a possible and
 
 Edit the file with your favorite editor.
 
-```shell
+```bash
 sudo vim /etc/udev/rules.d/99-disable-touchscreen.rules
 ```
 
@@ -51,7 +51,7 @@ Now save the file and exit.
 
 You can now exit reboot your system, or reload the udev rules by running
 
-```shell
+```bash
 sudo udevadm trigger
 ```
 

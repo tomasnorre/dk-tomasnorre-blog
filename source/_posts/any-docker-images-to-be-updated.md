@@ -113,7 +113,7 @@ find . -name 'docker-compose*' -type f | xargs grep 'image:' | awk '{print $3}' 
 
 Now we have an `images.txt`-file that the next script needs. This script that produces `json` from the `images.txt`-file.  
 
-```bash 
+```bash
 #!/bin/bash
 
 # removes already present images.json if any

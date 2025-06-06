@@ -21,7 +21,7 @@ With the blog post you will learn how to set up you own blog with [Jigsaw](https
 ### Let us get started
 open your terminal, and type in
 
-```shell
+```bash
 $ composer require tightenco/jigsaw
 $ ./vendor/bin/jigsaw init blog
 ```
@@ -30,7 +30,7 @@ And that's it for now.
 
 ### Watch the result
 Now you can watch you blog
-```shell
+```bash
 $ ./vendor/bin/jigsaw serve
 ```
 
@@ -40,7 +40,7 @@ There are a few things that you should pay attention to. Bellow there a snippet 
 
 Every category you want on your blog, you need a markdown file in your `_categories`-folder. The Layouts are all stored in the `_layouts`-folder, and last but not least, the blog posts itself are located in `_posts`-folder.
 
-```shell
+```bash
 ── _categories
 │   ├── configuration.md
 │   └── feature.md

@@ -19,7 +19,7 @@ Setting it up within `Jigsaw` is fairly simple.
 
 Add a `robots.txt` file to `sources/assets/` with the desired content, I have following in mine
 
-```txt 
+```apacheconf
 User-Agent: *
 Allow: /
 Sitemap: https://blog.tomasnorre.dk/sitemap.xml
