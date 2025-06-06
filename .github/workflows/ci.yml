@@ -60,7 +60,7 @@ jobs:
         with:
           args: delete pods -l app=site-dk-tomasnorre-blog -n default
 
-  Test-playwright-action:
+  Test:
     runs-on: ubuntu-24.04
     needs: Deploy
     steps:
@@ -69,22 +69,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Install playwright browsers
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: BASE_URL=https://blog.tomasnorre.dk npx playwright test
-
-  Test-setup-playwright:
-    runs-on: ubuntu-24.04
-    needs: Deploy
-    steps:
-      - uses: 7th-green/gha-playwright@v1.0.1
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-      - name: Install dependencies
-        run: npm ci
-      - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
         run: BASE_URL=https://blog.tomasnorre.dk npx playwright test
