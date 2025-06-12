@@ -4,7 +4,7 @@ section: content
 title: Freelancer
 date: 2025-05-20
 description: I have started working as a freelancer
-cover_image: /assets/img/posts/freelance.jpg
+cover_image: /assets/img/posts/freelance.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@yapics?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Leon Seibert</a> on <a href="https://unsplash.com/photos/internet-led-signage-beside-building-near-buildings-2m71l9fA6mg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Internet led sign beside building near buildings'
 featured: true

@@ -4,7 +4,7 @@ section: content
 title: TYPO3 Crawler with TYPO3 13 LTS Support
 date: 2025-01-29
 description: TYPO3 Crawler with TYPO3 13 LTS Support
-cover_image: /assets/img/posts/TYPO3-Crawler-with-TYPO3-13-LTS-Support.jpg
+cover_image: /assets/img/posts/TYPO3-Crawler-with-TYPO3-13-LTS-Support.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@an_ku_sh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ankush Minda</a> on <a href="https://unsplash.com/photos/balloons-flying-in-the-sky-TLBplYQvqn0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Ballons released into the air'
 featured: true

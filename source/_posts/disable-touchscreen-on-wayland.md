@@ -4,7 +4,7 @@ section: content
 title: Disable touchscreen on Wayland
 date: 2025-04-25
 description: Disable touchscreen on Wayland
-cover_image: /assets/img/posts/disable-touchscreen-on-wayland.jpg
+cover_image: /assets/img/posts/disable-touchscreen-on-wayland.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@katetrysh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kate Trysh</a> on <a href="https://unsplash.com/photos/a-man-is-pointing-at-a-large-poster-LRzkT1gIU8A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Person click on large touchscreen'
 featured: true

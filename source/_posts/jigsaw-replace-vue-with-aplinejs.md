@@ -4,7 +4,7 @@ section: content
 title: Jigsaw - replace vue with Alpine.js
 date: 2025-06-06
 description: Jigsaw - replace vue with Alpine.js
-cover_image: /assets/img/posts/jigsaw-replace-vue-with-alpinejs.jpg
+cover_image: /assets/img/posts/jigsaw-replace-vue-with-alpinejs.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@ttepavac?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tanja Tepavac</a> on <a href="https://unsplash.com/photos/a-piece-of-a-puzzle-with-a-missing-piece-cWMhxNmQVq0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Blue jigsaw puzzle, with a missing piece in the center'
 featured: true

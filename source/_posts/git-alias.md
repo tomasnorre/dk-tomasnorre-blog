@@ -4,7 +4,7 @@ section: content
 title: Git Alias
 date: 2025-02-03
 description: How to setup a Git Wip alias
-cover_image: /assets/img/posts/git-alias.jpg
+cover_image: /assets/img/posts/git-alias.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@yancymin?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yancy Min</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-text-description-on-a-computer-screen-842ofHC6MaI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Screenshot of a gitlog'
 featured: true

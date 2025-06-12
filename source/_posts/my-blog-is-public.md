@@ -4,7 +4,7 @@ section: content
 title: My blog is public
 date: 2024-10-29
 description: Short information about where to see how my blog is build
-cover_image: /assets/img/posts/my-blog-is-public.jpg
+cover_image: /assets/img/posts/my-blog-is-public.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@afgprogrammer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mohammad Rahmani</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-keyboard-on-a-table-lPKIb8dJ8kw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'A computer keyboard with RGB backlight'
 featured: true

@@ -4,7 +4,7 @@ section: content
 title: PHP 8.4 on Ubuntu 24.10
 date: 2024-12-27
 description: PHP 8.4 on Ubuntu 24.10
-cover_image: /assets/img/posts/php84-on-ubuntu-2410.jpg
+cover_image: /assets/img/posts/php84-on-ubuntu-2410.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@benofthenorth">Ben Griffiths</a> on <a href="https://unsplash.com/photos/blue-elephant-figurine-on-macbook-pro-Bj6ENZDMSDY">Unsplash</a>'
 cover_alt: 'Elephpant on MacBook'
 featured: true

@@ -4,7 +4,7 @@ section: content
 title: Tracking, but no Cookies
 date: 2021-10-15
 description: Testing tracking
-cover_image: /assets/img/posts/tracking-no-cookies.jpg
+cover_image: /assets/img/posts/tracking-no-cookies.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@benostein?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Stein</a> on <a href="https://unsplash.com/s/photos/cookies?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'A tray of cookies'
 featured: false

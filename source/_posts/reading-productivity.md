@@ -4,7 +4,7 @@ section: content
 title: Reading Productivity
 date: 2021-10-16
 description: How I boosted my reading productivity
-cover_image: /assets/img/posts/reading-productivity.jpg
+cover_image: /assets/img/posts/reading-productivity.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@itfeelslikefilm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Janko Ferlič</a> on <a href="https://unsplash.com/s/photos/book?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Library shelf with a lot of books.'
 featured: true

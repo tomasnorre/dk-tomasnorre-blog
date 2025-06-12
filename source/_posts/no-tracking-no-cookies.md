@@ -4,7 +4,7 @@ section: content
 title: No tracking, no cookies
 date: 2021-07-12
 description: Why I do not use cookies
-cover_image: /assets/img/posts/no-cookies.jpg
+cover_image: /assets/img/posts/no-cookies.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@raividanes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rai Vidanes</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Some cookies on a plate, with bowl and a baking equipment on the side'
 featured: false

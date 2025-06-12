@@ -4,7 +4,7 @@ section: content
 title: Squid proxy for apt packages and more
 date: 2024-11-15
 description: Squid proxy for apt packages and more
-cover_image: /assets/img/posts/squid-proxy.jpg
+cover_image: /assets/img/posts/squid-proxy.webp
 cover_credit: 'Photo by <a href="https://www.pexels.com/photo/a-myopsida-in-water-15559902/">Marissa Farrow</a>'
 cover_alt: 'Squid swimming'
 featured: true

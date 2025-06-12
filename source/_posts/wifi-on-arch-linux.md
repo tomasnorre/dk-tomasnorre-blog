@@ -4,7 +4,7 @@ section: content
 title: Wifi on Arch Linux
 date: 2025-03-15
 description: Connect to Wifi in Arch Linux
-cover_image: /assets/img/posts/wifi-on-arch-linux.jpg
+cover_image: /assets/img/posts/wifi-on-arch-linux.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@lukash?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lukas</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-table-uZkHtWsi2dE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Laptop with Arch Linux sticker'
 featured: true
