@@ -51,9 +51,9 @@
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
                 <p id="footer-links" class="mb-8">
-                    <a href="https://twitter.com/tomasnorre"><box-icon type='logo' name='Twitter'></box-icon></a>
-                    <a href="https://github.com/tomasnorre"><box-icon type='logo' name='GitHub'></box-icon></a>
-                    <a href="https://phpc.social/@tomasnorre"><box-icon type='logo' name='Mastodon'></box-icon></a>
+                    <a href="https://twitter.com/tomasnorre" aria-label="Link to my Twitter profile"><box-icon type='logo' name='Twitter'></box-icon></a>
+                    <a href="https://github.com/tomasnorre" aria-label="Link to my GitHub profile"><box-icon type='logo' name='GitHub'></box-icon></a>
+                    <a href="https://phpc.social/@tomasnorre" aria-label="Link to my Mastodon profile"><box-icon type='logo' name='Mastodon'></box-icon></a>
                 </p>
             <ul class="flex flex-col md:flex-row justify-center list-none">
                 <li class="md:mr-2">
@@ -61,8 +61,8 @@
                 </li>
 
                 <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten" aria-label="Link to Jigsaw by Tightens website, the tool used for this blog">Jigsaw</a>
+                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework"  aria-label="Link to Tailwindcss website, the css framework used for this blog">Tailwind CSS</a>.
                 </li>
             </ul>
         </footer>
