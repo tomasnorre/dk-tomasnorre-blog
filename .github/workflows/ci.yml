@@ -16,8 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install kamal
-        run: gem install kamal
+      - name: Install Kamal
+        run: |
+          gem install --user-install kamal
+          echo 'export PATH="$HOME/.local/share/gem/ruby/3.2.0/bin:$PATH"' >> $GITHUB_ENV
 
       - name: Build and deploy
         run: kamal deploy
