@@ -6,7 +6,7 @@ on:
       - "kamal"
 
 env:
-  KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_DOCKER_TOMASNORRE_DK_PASSWORD }}
+  KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
 
 jobs:
   Build:
