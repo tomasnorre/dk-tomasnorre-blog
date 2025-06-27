@@ -16,10 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
       - name: Install Kamal
-        run: |
-          gem install --user-install kamal
-          echo 'export PATH="$HOME/.local/share/gem/ruby/3.2.0/bin:$PATH"' >> $GITHUB_ENV
+        run: gem install kamal
 
       - name: Build and deploy
         run: kamal deploy
@@ -35,4 +38,4 @@ jobs:
       - name: Install playwright browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: BASE_URL=https://blog.tomasnorre.dk npx playwright test
+        run: BASE_URL=https://stage.blog.tomasnorre.dk npx playwright test
