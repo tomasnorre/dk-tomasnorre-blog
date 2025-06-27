@@ -33,7 +33,7 @@ jobs:
         run: gem install kamal
 
       - name: Build and deploy
-        run: KAMAL_SECRET_KEY_BASE=$(openssl rand -hex 64) kamal deploy
+        run: kamal deploy
 
   Test:
     runs-on: ubuntu-24.04
