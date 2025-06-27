@@ -24,7 +24,7 @@ jobs:
 
   Test:
     runs-on: ubuntu-24.04
-    needs: Deploy
+    needs: Build
     steps:
       - uses: 7th-green/gha-playwright@v1.0.3
       - uses: actions/checkout@v4
