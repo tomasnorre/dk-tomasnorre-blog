@@ -5,6 +5,9 @@ on:
     branches:
       - "main"
 
+env:
+  KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_DOCKER_TOMASNORRE_DK_PASSWORD }}
+
 jobs:
   Build:
     runs-on: ubuntu-24.04
@@ -16,53 +19,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up PHP Version 8.3
-        uses: shivammathur/setup-php@v2
+      - uses: webfactory/ssh-agent@v0.9.0
         with:
-          php-version: 8.3
-          tools: composer:v2
+          ssh-private-key: "${{ secrets.SSH_PRIVATE_KEY }}"
 
-      - name: Composer install
-        run: composer install
-
-      - uses: actions/setup-node@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          node-version: lts/*
-      - run: npm install && npm run prod
+          ruby-version: '3.3'
 
-      - name: Log in to Docker Registry
-        uses: docker/login-action@v3
-        with:
-          registry: docker.tomasnorre.dk
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Install Kamal
+        run: gem install kamal
 
-      - name: Build Container
-        run: docker build -t docker.tomasnorre.dk/dk-tomasnorre-blog:latest .
-
-      - name: Push Container to Registry
-        run: docker push docker.tomasnorre.dk/dk-tomasnorre-blog:latest
-
-  Deploy:
-    runs-on: ubuntu-24.04
-    needs: Build
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions-hub/kubectl@master
-        env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-        with:
-          args: apply -f deploy/ingress.yml -f deploy/service.yml -f deploy/deployment.yml -f deploy/certificate.yml
-      - uses: actions-hub/kubectl@master
-        env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
-        with:
-          args: delete pods -l app=site-dk-tomasnorre-blog -n default
+      - name: Build and deploy
+        run: kamal deploy
 
   Test:
     runs-on: ubuntu-24.04
-    needs: Deploy
+    needs: Build
     steps:
       - uses: 7th-green/gha-playwright@v1.0.3
       - uses: actions/checkout@v4
