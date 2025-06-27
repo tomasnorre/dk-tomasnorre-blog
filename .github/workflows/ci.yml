@@ -23,6 +23,7 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
+          mkdir -p ~/.ssh/
           ssh-keyscan 95.216.189.171 >> ~/.ssh/known_hosts
           eval $(ssh-agent -s)
           echo "$PRIVATE_SSH_KEY_FILE" | tr -d '\r' | DISPLAY=None ssh-add -
