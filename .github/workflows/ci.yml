@@ -26,6 +26,15 @@ jobs:
           ssh-keyscan 95.216.189.171 >> ~/.ssh/known_hosts
           eval "$(ssh-agent -s)"
           echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+          cat <<EOF > ~/.ssh/config
+          Host 95.216.189.171
+            StrictHostKeyChecking no
+            User root
+            IdentityFile ~/.ssh/id_rsa
+            IdentitiesOnly yes
+            PasswordAuthentication no
+            BatchMode yes
+          EOF
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
