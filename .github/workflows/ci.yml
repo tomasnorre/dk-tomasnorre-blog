@@ -7,6 +7,7 @@ on:
 
 env:
   KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+  SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
 jobs:
   Build:
@@ -21,10 +22,10 @@ jobs:
 
       - name: Add SSH key
         run: |
-          mkdir -p ~/.ssh/
+          mkdir -p ~/.ssh
           ssh-keyscan 95.216.189.171 >> ~/.ssh/known_hosts
-          eval $(ssh-agent -s)
-          echo "SSH_PRIVATE_KEY" | tr -d '\r' | DISPLAY=None ssh-add -
+          eval "$(ssh-agent -s)"
+          echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
