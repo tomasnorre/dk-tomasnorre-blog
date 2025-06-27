@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - "kamal"
+      - "main"
 
 env:
   KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_DOCKER_TOMASNORRE_DK_PASSWORD }}
@@ -45,4 +45,4 @@ jobs:
       - name: Install playwright browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: BASE_URL=https://stage.blog.tomasnorre.dk npx playwright test
+        run: BASE_URL=https://blog.tomasnorre.dk npx playwright test
