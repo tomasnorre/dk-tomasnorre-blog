@@ -89,11 +89,11 @@ RUN echo `TZ='Europe/Copenhagen' date` > /usr/share/nginx/html/last_build.txt
 An important part of Kamal is the `/up`-health check endpoint. You can set up Nginx simply by adding following to your nginx configuration in the `server {}` section.
 
 ```apacheconf
-    # Health check endpoint for Kamal
-    location = /up {
-        return 200 'OK';
-        add_header Content-Type text/plain;
-    }
+# Health check endpoint for Kamal
+location = /up {
+    return 200 'OK';
+    add_header Content-Type text/plain;
+}
 ```
 
 As you can see it's fairly simple, it's a matter of building the static HTML and serving them with Nginx.
