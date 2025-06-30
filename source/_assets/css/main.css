@@ -1,0 +1,24 @@
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components.css';
+@import '~highlight.js/styles/a11y-light.css';
+
+@import '_base.css';
+@import '_navigation.css';
+
+@import 'tailwindcss/utilities.css';
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/assets/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/assets/font/NunitoSansLatin300.woff2') format('truetype');
+}
+
+.content ul > li {
+    margin-left: 40px;
+}
+
+[x-cloak] { display: none !important; }
