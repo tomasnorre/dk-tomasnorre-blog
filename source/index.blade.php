@@ -2,7 +2,7 @@
 
 @section('body')
     @foreach ($posts->where('date', true)->take(1) as $featuredPost)
-        <div class="w-full mb-6">
+        <div class="w-full mb-6 bg-white rounded-2xl p-4">
 
             @if ($featuredPost->cover_image)
                 <div class="relative pb-2/6">
@@ -42,9 +42,9 @@
     @endforeach
 
     @foreach ($posts->where('date', true)->skip(1)->chunk(2) as $row)
-        <div class="flex flex-col md:flex-row md:-mx-6">
+        <div class="flex flex-col md:flex-row md:-mx-2 ">
             @foreach ($row as $post)
-                <div class="w-full md:w-1/2 md:mx-6">
+                <div class="w-full md:w-1/2 md:mx-2">
                     @include('_components.post-preview-inline')
                 </div>
 
