@@ -2,7 +2,7 @@
 
 @section('body')
     @foreach ($posts->where('date', true)->take(1) as $featuredPost)
-        <div class="bg-white rounded-2xl shadow-md mb-12 overflow-hidden">
+        <div class="bg-white rounded-2xl shadow-md mb-6 overflow-hidden">
             <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->cover_alt }}"
                  class="w-full h-64 object-cover"/>
             <div class="p-6">
