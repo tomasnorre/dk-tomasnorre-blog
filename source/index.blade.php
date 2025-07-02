@@ -2,60 +2,22 @@
 
 @section('body')
     @foreach ($posts->where('date', true)->take(1) as $featuredPost)
-        <div class="w-full mb-6 bg-white rounded-2xl p-4">
-
-            @if ($featuredPost->cover_image)
-                <div class="relative pb-2/6">
-                    <img
-                            src="{{ $featuredPost->cover_image }}"
-                            alt="{{ $featuredPost->cover_alt }}"
-                            class="absolute h-full w-full object-cover rounded-2xl"
-                    >
-                </div>
-            @endif
-
-            <date class="text-gray-700 font-medium my-2">
-                {{ $featuredPost->getDate()->format('F j, Y') }}
-            </date>
-
-            <h2 class="text-3xl mt-0">
-                <a
-                        href="{{ $featuredPost->getUrl() }}"
-                        title="Read {{ $featuredPost->title }}"
-                        class="text-gray-900 font-extrabold"
-                >
-                    {{ $featuredPost->title }}
+        <div class="bg-white rounded-2xl shadow-md mb-12 overflow-hidden">
+            <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->cover_alt }}"
+                 class="w-full h-64 object-cover"/>
+            <div class="p-6">
+                <p class="text-sm text-gray-500 mb-1">{{ $featuredPost->getDate()->format('F j, Y') }}</p>
+                <a href="{{ $featuredPost->getUrl() }}">
+                    <h1 class="text-3xl font-bold mb-2">{{ $featuredPost->title }}</h1>
+                    <p class="mb-4 text-gray-600">{!! $featuredPost->getExcerpt() !!}</p>
                 </a>
-            </h2>
-
-            <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
-
-            <a href="{{ $featuredPost->getUrl() }}"
-               title="Read - {{ $featuredPost->title }}"
-               class="uppercase tracking-wide mb-4"
-            >
-                Read
-            </a>
+                <a href="{{ $featuredPost->getUrl() }}" class="text-blue-600 font-semibold hover:underline">Read More →</a>
+            </div>
         </div>
-
-        <hr class="border-b my-6">
     @endforeach
-
-    @foreach ($posts->where('date', true)->skip(1)->chunk(2) as $row)
-        <div class="flex flex-col md:flex-row md:-mx-2 ">
-            @foreach ($row as $post)
-                <div class="w-full md:w-1/2 md:mx-2">
-                    @include('_components.post-preview-inline')
-                </div>
-
-                @if (! $loop->last)
-                    <hr class="block md:hidden w-full border-b mt-2 mb-6">
-                @endif
-            @endforeach
-        </div>
-
-        @if (! $loop->last )
-            <hr class="w-full border-b mt-2 mb-6">
-        @endif
+    <div class="grid md:grid-cols-2 gap-6">
+    @foreach ($posts->where('date', true)->skip(1) as $post)
+            @include('_components.post-preview-inline')
     @endforeach
+    </div>
 @stop

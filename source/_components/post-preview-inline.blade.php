@@ -1,24 +1,21 @@
-<div class="flex flex-col mb-4">
-    <div>
-        <img src="{{ $post->cover_image }}" class="rounded-2xl h-64 w-full"  alt="{{ $post->cover_alt }}"/>
+<div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+    <img src="{{ $post->cover_image }}" alt="{{ $post->cover_alt }}" class="w-full h-48 object-cover" />
+
+    <!-- Make the inner content grow with flex -->
+    <div class="p-6 flex flex-col flex-1">
+        <p class="text-sm text-gray-500 mb-1">
+            {{ $post->getDate()->format('F j, Y') }}
+        </p>
+
+        <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}">
+            <h2 class="text-xl font-bold mb-2">{{ $post->title }}</h2>
+            <p class="mb-4 text-gray-600">{!! $post->getExcerpt(200) !!}</p>
+        </a>
+
+        <!-- Spacer + Read More -->
+        <div class="mt-auto pt-4">
+            <a href="{{ $post->getUrl() }}" title="Read more - {{ $post->title }}"
+               class="text-blue-600 font-semibold hover:underline">Read More →</a>
+        </div>
     </div>
-    <date class="text-gray-700 font-medium my-2">
-        {{ $post->getDate()->format('F j, Y') }}
-    </date>
-
-    <h2 class="text-3xl mt-0">
-        <a
-            href="{{ $post->getUrl() }}"
-            title="Read more - {{ $post->title }}"
-            class="text-gray-900 font-extrabold"
-        >{{ $post->title }}</a>
-    </h2>
-
-    <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
-
-    <a
-        href="{{ $post->getUrl() }}"
-        title="Read more - {{ $post->title }}"
-        class="uppercase font-semibold tracking-wide mb-2"
-    >Read</a>
 </div>

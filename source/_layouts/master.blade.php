@@ -45,9 +45,9 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="content flex-auto w-full container max-w-4xl mx-auto py-16">
+        <div class="max-w-6xl mx-auto px-4 py-10">
             @yield('body')
-        </main>
+        </div>
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
                 <p id="footer-links" class="mb-8">
