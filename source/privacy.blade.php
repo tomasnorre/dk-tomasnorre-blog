@@ -2,7 +2,7 @@
 title: Privacy
 description:
 ---
-@extends('_layouts.master')
+@extends('_layouts.main')
 
 @section('body')
 
