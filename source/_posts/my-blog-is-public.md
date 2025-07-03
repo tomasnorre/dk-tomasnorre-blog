@@ -11,6 +11,6 @@ featured: true
 categories: [blog]
 ---
 
-I don't know if you are away, but my blog is fully public at [https://github.com/tomasnorre/dk-tomasnorre-blog](https://github.com/tomasnorre/dk-tomasnorre-blog), you can have a peak, get inspired on how to setup your own blog.
-You can copy paste whatever you want. Have fun.
+I don't know if you are aware, but my blog is fully public at [https://github.com/tomasnorre/dk-tomasnorre-blog](https://github.com/tomasnorre/dk-tomasnorre-blog), you can have a peak, get inspired on how to setup your own blog.
+You can copy/paste whatever you want from the set-up, not the content ;) . Have fun.
 

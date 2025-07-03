@@ -11,7 +11,7 @@ featured: true
 categories: [linux]
 ---
 
-This is a short intro on how to setup Wifi on Arch Linux.
+This is a short intro on how to set up Wi-Fi on Arch Linux.
 
 In your cli you need to run the `iwctl`
 

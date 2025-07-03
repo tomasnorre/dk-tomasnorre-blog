@@ -33,7 +33,7 @@ Added
 * Support for PHP 8.4
 ```
 
-Both releases can be download from either [Packagist](https://packagist.org/packages/tomasnorre/crawler) or from [TYPO3 Extension Repository](https://extensions.typo3.org/extension/crawler)
+Both releases can be downloaded from either [Packagist](https://packagist.org/packages/tomasnorre/crawler) or from [TYPO3 Extension Repository](https://extensions.typo3.org/extension/crawler)
 
 I prefer installing it with [composer](https://getcomposer.org/):
 
