@@ -19,7 +19,7 @@
             <date>{{ date('F j, Y', $page->date) }}</date>
         </p>
 
-        <h1 class="text-4xl font-bold mb-4">{{ $page->title }}</h1>
+        <h2 class="text-4xl font-bold mb-4">{{ $page->title }}</h2>
 
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)
