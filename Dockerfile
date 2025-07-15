@@ -2,8 +2,8 @@ FROM composer:2 AS builder
 WORKDIR /app
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader \
-    && ./vendor/bin/jigsaw build production
+RUN apk add --update nodejs npm
+RUN composer install --no-dev --optimize-autoloader && npm install && npm run prod
 
 FROM nginx:alpine
 COPY config/nginx-default.conf /etc/nginx/conf.d/default.conf

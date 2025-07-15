@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'http://localhost:8000',
     'production' => false,
     'siteName' => 'Tomas Norre\'s Blog',
     'siteDescription' => 'Thoughts, Ideas and Random Stuff',

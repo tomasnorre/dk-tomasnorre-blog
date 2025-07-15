@@ -1,11 +1,145 @@
-@import 'tailwindcss/base.css';
-@import 'tailwindcss/components.css';
-@import '~highlight.js/styles/a11y-light.css';
+@import 'tailwindcss';
+@import 'highlight.js/styles/a11y-light.css';
 
-@import '_base.css';
-@import '_navigation.css';
+/* _base.css */
+body {
+    font-size: 17px;
+}
 
-@import 'tailwindcss/utilities.css';
+a {
+    @apply font-semibold;
+    @apply no-underline;
+    @apply text-blue-600;
+
+    &:hover {
+        @apply text-blue-800;
+    }
+}
+
+blockquote {
+    @apply border-blue-400;
+    @apply border-l-4;
+    @apply font-normal;
+    @apply italic;
+    @apply my-8;
+    @apply pl-6;
+    @apply text-gray-800;
+    @apply text-lg;
+}
+
+code {
+    @apply bg-gray-300;
+    @apply px-2;
+    @apply py-px;
+    @apply rounded;
+    @apply text-sm;
+}
+
+code.hljs {
+    @apply bg-transparent;
+    @apply p-0;
+
+    .hljs-comment,
+    .hljs-keyword,
+    .hljs-meta {
+        @apply font-normal;
+        @apply not-italic;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply leading-tight;
+    @apply mb-4;
+    @apply mt-8;
+    @apply text-gray-900;
+
+    &:first-child {
+        @apply mt-0;
+    }
+}
+
+hr {
+    @apply border-b;
+    @apply border-blue-200;
+    @apply my-12;
+    @apply rounded-full;
+}
+
+li {
+    ul,
+    ol {
+        @apply my-0;
+        @apply ml-8;
+    }
+}
+
+ol,
+ul {
+    @apply my-4;
+}
+
+ol {
+    @apply list-decimal;
+}
+
+ul {
+    @apply list-disc;
+}
+
+p {
+    @apply my-3;
+    @apply md:my-6;
+}
+
+pre {
+    @apply bg-gray-200;
+    @apply leading-loose;
+    @apply my-6;
+    @apply overflow-x-auto;
+    @apply p-4;
+    @apply rounded;
+    @apply shadow;
+    @apply text-base;
+
+    code {
+        @apply bg-transparent;
+        @apply block;
+        @apply p-0;
+    }
+}
+
+::selection {
+    @apply bg-blue-500;
+    @apply text-white;
+}
+/* end _base.css */
+/* _navigation.css */
+.nav-menu {
+    @apply bg-gray-200;
+    @apply pb-2;
+    @apply pt-6;
+    @apply px-2;
+    @apply shadow;
+    @apply w-auto;
+}
+
+.nav-menu__item {
+    @apply block;
+    @apply no-underline;
+    @apply mb-4;
+    @apply mt-0;
+    @apply text-gray-800;
+    @apply text-sm;
+}
+
+/* end _navigation.css */
+
+@config '../../../tailwind.config.js';
 
 @font-face {
     font-family: 'JetBrainsMono';
