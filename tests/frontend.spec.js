@@ -34,12 +34,12 @@ test('social media icons', async ({ page }) => {
 });
 
 test('about', async ({ page }) => {
-  await page.goto(process.env.BASE_URL);
+  await page.goto(process.env.BASE_URL + '/about');
   await expect(page).toHaveTitle(/About | /);
 });
 
 test('privacy', async ({ page }) => {
-  await page.goto(process.env.BASE_URL);
+  await page.goto(process.env.BASE_URL + '/privacy');
   await expect(page).toHaveTitle(/Privacy | /);
 });
 
