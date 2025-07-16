@@ -55,7 +55,34 @@ test('search', async ({page}) => {
     await expect(page.getByRole('link', {name: 'Disable touchscreen on Wayland'})).toBeVisible();
 
 });
-/* Todos
-* test search small screens
-* test menu small screens
-*/
+
+test('search on small screens', async ({browser}) => {
+    const page = await browser.newPage();
+    await page.setViewportSize({
+        width: 640,
+        height: 480,
+    });
+    await page.goto(process.env.BASE_URL + '/about');
+    await page.getByRole('button', { name: 'search icon' }).click();
+    await expect(page.getByRole('textbox', {name: 'Search'})).toBeVisible();
+    await page.getByRole('textbox', {name: 'Search'}).click();
+    await page.getByRole('textbox', {name: 'Search'}).fill('wayland ');
+    const resultContainer = page.locator('#search-result');
+    await expect(resultContainer).toBeVisible();
+    // Wait briefly in case of debounce or animation
+    await page.waitForTimeout(300); // adjust this based on actual app behavior
+    await expect(page.getByRole('link', {name: 'Disable touchscreen on Wayland'})).toBeVisible();
+});
+
+test('menu on small screens', async ({browser}) => {
+    const page = await browser.newPage();
+    await page.setViewportSize({
+        width: 640,
+        height: 480,
+    });
+    await page.goto(process.env.BASE_URL + '/about');
+    await page.getByRole('button').nth(1).click();
+    await expect(page.locator('#js-nav-menu')).toContainText('About');
+    await page.getByRole('button').nth(1).click();
+    await expect(page.locator('#js-nav-menu')).toBeVisible({visible: false});
+});
