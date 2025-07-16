@@ -63,18 +63,18 @@
             <box-icon type='logo' name='Mastodon'></box-icon>
         </a>
     </p>
-    <ul class="flex flex-col md:flex-row justify-center list-none">
-        <li class="md:mr-2">
+    <div class="flex flex-col md:flex-row justify-center ">
+        <span class="md:mr-2">
             &copy; <a href="{{ $page->baseUrl }}" title="Tomas Norre">Tomas Norre</a> {{ date('Y') }}.
-        </li>
+        </span>
 
-        <li>
+        <span>
             Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten"
                           aria-label="Link to Jigsaw by Tightens website, the tool used for this blog">Jigsaw</a>
             and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework"
                    aria-label="Link to Tailwindcss website, the css framework used for this blog">Tailwind CSS</a>.
-        </li>
-    </ul>
+        </span>
+    </div>
 </footer>
 
 <!-- Scripts for nav menu toogle -->
