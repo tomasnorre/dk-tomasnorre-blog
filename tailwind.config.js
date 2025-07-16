@@ -80,6 +80,13 @@ module.exports = {
             '5xl': '2.625rem',
             '6xl': '10rem',
         },
+        colors: {
+            'bg-main': 'var(--color-bg-main)',
+            'bg-card': 'var(--color-bg-card)',
+            'link': 'var(--color-link)',
+            'link-hover': 'var(--color-link-link)',
+            'text': 'var(--color-text)',
+        },
     },
     variants: {
         borderRadius: ['responsive', 'focus'],

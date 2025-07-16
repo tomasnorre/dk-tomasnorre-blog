@@ -26,13 +26,13 @@
     <link rel="canonical" href="{{ $page->getUrl() }}">
 </head>
 
-<body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans"
-      x-data="{ showMobileMenu: false}">
-<header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
+<body class="flex flex-col justify-between min-h-screen bg-bg  text-text leading-normal font-sans" :class="darkMode ? 'dark' : ''"
+      x-data="{ showMobileMenu: false, darkMode: false}">
+<header class="flex items-center shadow bg-bg-main border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
             <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">{{ $page->siteName }}</h1>
+                <h1 class="text-lg md:text-2xl text-link font-semibold hover:text-link-hover my-0">{{ $page->siteName }}</h1>
             </a>
         </div>
 
@@ -42,6 +42,7 @@
             @include('_nav.menu')
 
             @include('_nav.menu-toggle')
+            @include('_nav.mode-toggle')
         </div>
     </div>
 </header>
@@ -52,7 +53,7 @@
     @yield('body')
 </main>
 
-<footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+<footer class="bg-bg-main text-center text-sm mt-12 py-4" role="contentinfo">
     <p id="footer-links" class="mb-8">
         <a href="https://twitter.com/tomasnorre" aria-label="Link to my Twitter profile">
             <box-icon type='logo' name='Twitter'></box-icon>

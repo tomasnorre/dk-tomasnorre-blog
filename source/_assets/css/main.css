@@ -147,3 +147,21 @@ pre {
 }
 
 [x-cloak] { display: none !important; }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --color-bg-main: #ffffff;
+    --color-bg-card: #ffffff;
+    --color-link: #192cb8;
+    --color-link-hover: #155dfc;
+    --color-text: #6a7282;
+}
+
+.dark {
+    --color-bg-main: black;
+    --color-bg-card: black;
+    --color-link: #192cb8;
+    --color-link-hover: #155dfc;
+    --color-text: white;
+}
