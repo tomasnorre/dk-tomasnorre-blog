@@ -26,7 +26,8 @@
     <link rel="canonical" href="{{ $page->getUrl() }}">
 </head>
 
-<body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
+<body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans"
+      x-data="{ showMobileMenu: false}">
 <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
@@ -76,9 +77,6 @@
         </span>
     </div>
 </footer>
-
-<!-- Scripts for nav menu toogle -->
-@stack('scripts')
 <!-- 100% privacy-first analytics -->
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
