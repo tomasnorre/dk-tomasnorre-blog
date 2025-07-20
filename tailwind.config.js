@@ -5,7 +5,7 @@ module.exports = {
             'source/**/*.md',
             'source/**/*.js',
             'source/**/*.php',
-            'source/**/*.vue',
+            'source/**/*.css',
         ],
         options: {
             whitelist: [
@@ -84,7 +84,7 @@ module.exports = {
             'bg-main': 'var(--color-bg-main)',
             'bg-card': 'var(--color-bg-card)',
             'link': 'var(--color-link)',
-            'link-hover': 'var(--color-link-link)',
+            'link-hover': 'var(--color-link-hover)',
             'text': 'var(--color-text)',
         },
     },
