@@ -108,6 +108,7 @@ pre {
     background-color: var(--color-link-hover);
     color: white;
 }
+
 /* end _base.css */
 /* _navigation.css */
 .nav-menu {
@@ -146,9 +147,20 @@ pre {
     margin-left: 40px;
 }
 
-[x-cloak] { display: none !important; }
+[x-cloak] {
+    display: none !important;
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-bg-main: var(--color-bg-main);
+    --color-bg-card: var(--color-bg-card);
+    --color-link: var(--color-link);
+    --color-link-hover: var(--color-link-hover);
+    --color-text: var(--color-text);
+}
+
 
 :root {
     --color-bg-main: #ffffff;
