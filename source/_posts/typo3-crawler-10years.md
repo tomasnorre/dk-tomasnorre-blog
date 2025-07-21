@@ -11,7 +11,7 @@ featured: true
 categories: [development,opensource,typo3]
 ---
 
-Some when in 1998, I didn't have the money for buying my Licenses for my Windows, and I started to look for other legal alternatives.
+Somewhen in 1998, I didn't have the money for buying my Licenses for my Windows, and I started to look for other legal alternatives.
 I was then introduced to Linux and Open Source. It took me some months to get use to Linux, but I feel in love with the idea of open source.
 
 I have now been using Linux and primary open source products since then. Later one when I got more into programming I also those the part of 
