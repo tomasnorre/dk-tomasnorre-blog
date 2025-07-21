@@ -9,7 +9,23 @@ export default defineConfig({
                 'source/_assets/js/main.js',
                 'source/_assets/css/main.css'
             ],
-            refresh: true,
+            refresh: {
+                files: [
+                    'config.php',
+                    'bootstrap.php',
+                    'listeners/**/*.php',
+                    'source/**/*.md',
+                    'source/**/*.php',
+                    'source/**/*.html',
+                    'source/**/*.css',
+                    'source/**/*.js',
+                ],
+                ignored: [
+                    'build_**/**',
+                    'cache/**',
+                    'source/**/_tmp/*',
+                ],
+            },
         }),
         tailwindcss()
     ],
