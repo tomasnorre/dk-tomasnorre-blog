@@ -17,18 +17,18 @@ a {
 }
 
 blockquote {
-    /* @apply border-blue-400;*/
+    @apply border-blue-400;
     @apply border-l-4;
     @apply font-normal;
     @apply italic;
     @apply my-8;
     @apply pl-6;
-    /* @apply text-gray-800; */
+    @apply text-gray-800;
     @apply text-lg;
 }
 
 code {
-    /* @apply bg-gray-300; */
+    @apply bg-gray-300;
     @apply px-2;
     @apply py-px;
     @apply rounded;
@@ -64,7 +64,7 @@ h6 {
 
 hr {
     @apply border-b;
-    /* @apply border-blue-200; */
+    @apply border-blue-200;
     @apply my-12;
     @apply rounded-full;
 }
@@ -88,19 +88,19 @@ p {
 }
 
 pre {
-    /* @apply bg-gray-200; */
+    @apply bg-gray-200;
     @apply leading-loose;
     @apply my-6;
     @apply overflow-x-auto;
-    @apply p-4;
+    @apply pt-2;
     @apply rounded;
     @apply shadow;
-    @apply text-base;
 
     code {
         @apply bg-transparent;
         @apply block;
         @apply p-0;
+        @apply leading-8;
     }
 }
 
@@ -108,11 +108,10 @@ pre {
     background-color: var(--color-link-hover);
     color: white;
 }
-
 /* end _base.css */
 /* _navigation.css */
 .nav-menu {
-    /* @apply bg-gray-200; */
+    @apply bg-gray-200;
     @apply pb-2;
     @apply pt-6;
     @apply px-2;
@@ -125,13 +124,11 @@ pre {
     @apply no-underline;
     @apply mb-4;
     @apply mt-0;
-    /* @apply text-gray-800;*/
+    @apply text-gray-800;
     @apply text-sm;
 }
 
 /* end _navigation.css */
-
-@config '../../../tailwind.config.js';
 
 @font-face {
     font-family: 'JetBrainsMono';
@@ -147,8 +144,11 @@ pre {
     margin-left: 40px;
 }
 
-[x-cloak] {
-    display: none !important;
+[x-cloak] { display: none !important; }
+
+:root {
+    --font-sans: 'NunitoSans', sans-serif;
+    --font-mono: 'JetBrainsMono', monospace;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
