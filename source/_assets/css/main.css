@@ -92,15 +92,15 @@ pre {
     @apply leading-loose;
     @apply my-6;
     @apply overflow-x-auto;
-    @apply p-4;
+    @apply pt-2;
     @apply rounded;
     @apply shadow;
-    @apply text-base;
 
     code {
         @apply bg-transparent;
         @apply block;
         @apply p-0;
+        @apply leading-8;
     }
 }
 
@@ -130,8 +130,6 @@ pre {
 
 /* end _navigation.css */
 
-@config '../../../tailwind.config.js';
-
 @font-face {
     font-family: 'JetBrainsMono';
     src: url('/assets/font/JetBrainsMono-Regular.woff2') format('woff2');
@@ -147,3 +145,8 @@ pre {
 }
 
 [x-cloak] { display: none !important; }
+
+:root {
+    --font-sans: 'NunitoSans', sans-serif;
+    --font-mono: 'JetBrainsMono', monospace;
+}
