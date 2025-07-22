@@ -9,10 +9,10 @@ body {
 a {
     @apply font-semibold;
     @apply no-underline;
-    @apply text-blue-600;
+    color: var(--color-link);
 
     &:hover {
-        @apply text-blue-800;
+        color: var(--color-link-hover);
     }
 }
 
@@ -55,7 +55,7 @@ h6 {
     @apply leading-tight;
     @apply mb-4;
     @apply mt-8;
-    @apply text-gray-900;
+    color: var(--color-text);
 
     &:first-child {
         @apply mt-0;
@@ -105,8 +105,8 @@ pre {
 }
 
 ::selection {
-    @apply bg-blue-500;
-    @apply text-white;
+    background-color: var(--color-link-hover);
+    color: white;
 }
 /* end _base.css */
 /* _navigation.css */
@@ -126,6 +126,11 @@ pre {
     @apply mt-0;
     @apply text-gray-800;
     @apply text-sm;
+}
+
+p > code {
+    color: var(--color-text-tag);
+    @apply px-2;
 }
 
 /* end _navigation.css */
@@ -149,4 +154,34 @@ pre {
 :root {
     --font-sans: 'NunitoSans', sans-serif;
     --font-mono: 'JetBrainsMono', monospace;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-bg-main: var(--color-bg-main);
+    --color-bg-card: var(--color-bg-card);
+    --color-link: var(--color-link);
+    --color-link-hover: var(--color-link-hover);
+    --color-text: var(--color-text);
+}
+
+
+:root {
+    --color-bg-main: #ffffff;
+    --color-bg-card: #ffffff;
+    --color-link: var(--color-blue-800);
+    --color-link-hover: var(--color-blue-600);
+    --color-text: var(--color-gray-800);
+    --color-text-tag: var(--color-gray-800);
+}
+
+.dark {
+    --color-bg-main: #1A3636;
+    --color-bg-card: #1A3636;
+    --color-link: #677D6A;
+    --color-link-hover: #40534C;
+    --color-text: var(--color-gray-400);
+    --color-text-tag: var(--color-gray-800);
+
 }
