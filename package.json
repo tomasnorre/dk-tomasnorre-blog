@@ -7,7 +7,7 @@
     "prod": "vite build --mode production"
   },
   "devDependencies": {
-    "@playwright/test": "^1.54.1",
+    "@playwright/test": "^1.54.2",
     "@tailwindcss/vite": "^4.1.11",
     "@tighten/jigsaw-vite-plugin": "^1.0.1",
     "alpinejs": "^3.14.1",
