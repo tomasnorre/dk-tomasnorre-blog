@@ -15,7 +15,7 @@
     "fuse.js": "^7.1.0",
     "highlight.js": "^11.11.1",
     "tailwindcss": "^4.1.11",
-    "vite": "^6.3.5"
+    "vite": "^7.1.2"
   },
   "dependencies": {
     "boxicons": "^2.1.4"
