@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Resize harddisk in Proxmox VM
-date: 2025-08-23
+date: 2025-08-22
 description: Resize harddisk in Proxmox VM
 cover_image: /assets/img/posts/resize-harddisk-in-proxmox-vm.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@artwall_hd?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Art Wall - Kittenprint</a> on <a href="https://unsplash.com/photos/black-and-silver-turntable-on-black-table-9Wq1HpghQ4A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
