@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
-    "@tailwindcss/vite": "^4.1.12",
+    "@tailwindcss/vite": "^4.1.13",
     "@tighten/jigsaw-vite-plugin": "^1.0.1",
     "alpinejs": "^3.15.0",
     "axios": "^1.11.0",
