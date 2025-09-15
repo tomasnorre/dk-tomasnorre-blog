@@ -1,5 +1,7 @@
 // @ts-check
 import {test, expect} from '@playwright/test';
+import axios from 'axios';
+import{ parseStringPromise } from 'xml2js';
 
 test('menu', async ({page}) => {
     await page.goto(process.env.BASE_URL);
@@ -85,4 +87,33 @@ test('menu on small screens', async ({browser}) => {
     await expect(page.locator('#js-nav-menu')).toContainText('About');
     await page.getByRole('button').nth(1).click();
     await expect(page.locator('#js-nav-menu')).toBeVisible({visible: false});
+});
+
+test.describe('Check Sitemap XML', () => {
+    const sitemapUrl = process.env.BASE_URL + '/sitemap.xml';
+    let changefreqs = [];
+
+    test.beforeAll(async () => {
+        const response = await axios.get(sitemapUrl, { responseType: 'text' });
+        expect(response.status).toBe(200);
+
+        const xml = response.data;
+        const json = await parseStringPromise(xml);
+
+        const urls = json.urlset.url;
+        expect(Array.isArray(urls)).toBe(true);
+        expect(urls.length).toBeGreaterThan(0);
+
+        changefreqs = urls
+            .map(u => (u.changefreq ? u.changefreq[0] : null))
+            .filter(cf => typeof cf === 'string');
+    });
+
+    test('includes at least one daily frequency', async () => {
+        expect(changefreqs).toContain('daily');
+    });
+
+    test('includes at least one monthly frequency', async () => {
+        expect(changefreqs).toContain('monthly');
+    });
 });
