@@ -2,10 +2,12 @@ import axios from 'axios';
 window.axios = axios;
 
 import Alpine from "alpinejs";
+import persist from "@alpinejs/persist";
 import Fuse from "fuse.js";
 
 window.Fuse = Fuse;
 window.Alpine = Alpine;
+Alpine.plugin(persist)
 Alpine.start();
 
 import hljs from 'highlight.js/lib/core';
@@ -39,6 +41,6 @@ hljs.registerLanguage('apacheconf', apache);
 hljs.registerLanguage('txt', plaintext);
 
 document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightElement(block); // Changed from highlightBlock to highlightElement in newer versions of highlight.js
+    hljs.highlightElement(block);
 });
  

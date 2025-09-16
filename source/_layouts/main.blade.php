@@ -27,7 +27,7 @@
 </head>
 
 <body class="flex flex-col justify-between min-h-screen bg-bg-main text-text leading-normal font-sans" :class="darkMode ? 'dark' : ''"
-      x-data="{ showMobileMenu: false, darkMode: false}">
+      x-data="{ showMobileMenu: false, darkMode: $persist(false)}">
 <header class="flex items-center shadow bg-bg-main border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div class="flex items-center">
