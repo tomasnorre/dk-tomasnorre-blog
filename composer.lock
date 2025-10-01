@@ -928,16 +928,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v12.31.1",
+            "version": "v12.32.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "3abe3b6866701c3c8d2b8724d51a435c5236c106"
+                "reference": "648bbaf51b108771e0c3297dc251953fd03a4243"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/3abe3b6866701c3c8d2b8724d51a435c5236c106",
-                "reference": "3abe3b6866701c3c8d2b8724d51a435c5236c106",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/648bbaf51b108771e0c3297dc251953fd03a4243",
+                "reference": "648bbaf51b108771e0c3297dc251953fd03a4243",
                 "shasum": ""
             },
             "require": {
@@ -1003,7 +1003,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-09-23T13:51:52+00:00"
+            "time": "2025-09-29T18:49:19+00:00"
         },
         {
             "name": "illuminate/view",
@@ -4155,16 +4155,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v7.3.3",
+            "version": "v7.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "e0837b4cbcef63c754d89a4806575cada743a38d"
+                "reference": "ec25870502d0c7072d086e8ffba1420c85965174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/e0837b4cbcef63c754d89a4806575cada743a38d",
-                "reference": "e0837b4cbcef63c754d89a4806575cada743a38d",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/ec25870502d0c7072d086e8ffba1420c85965174",
+                "reference": "ec25870502d0c7072d086e8ffba1420c85965174",
                 "shasum": ""
             },
             "require": {
@@ -4231,7 +4231,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v7.3.3"
+                "source": "https://github.com/symfony/translation/tree/v7.3.4"
             },
             "funding": [
                 {
@@ -4251,7 +4251,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-01T21:02:37+00:00"
+            "time": "2025-09-07T11:39:36+00:00"
         },
         {
             "name": "symfony/translation-contracts",
