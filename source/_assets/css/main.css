@@ -4,6 +4,7 @@
 /* _base.css */
 body {
     font-size: 17px;
+    @apply text-gray-700;
 }
 
 a {
@@ -47,7 +48,7 @@ code.hljs {
     }
 }
 
-h2,
+h1,
 h3,
 h4,
 h5,
@@ -55,11 +56,21 @@ h6 {
     @apply leading-tight;
     @apply mb-4;
     @apply mt-8;
-    @apply text-gray-900;
+    @apply text-gray-700;
 
     &:first-child {
         @apply mt-0;
     }
+}
+
+h3 {
+    @apply font-bold;
+    @apply text-xl;
+}
+
+h4 {
+    @apply font-bold;
+    @apply text-lg;
 }
 
 hr {

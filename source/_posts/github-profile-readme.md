@@ -16,7 +16,7 @@ GitHub have for quite some time given you the possibility to add a nice [profile
 
 A static site is a little boring, and maintaining it manually even worse.
 
-**Let me show how to automate this**
+### Let me show how to automate this
 
 *Disclaimer: This is heavily inspired and copied from [https://github.com/soyuka](https://github.com/soyuka)*
 
@@ -32,7 +32,7 @@ user
 
 When the token is create save it under the repository `username/username` under the name `PERSONAL_GITHUB_TOKEN`.
 
-**Create the template and GitHub action**
+#### Create the template and GitHub action
 
 Now we need to setup the action. First we will create a template
 
@@ -65,7 +65,7 @@ This README setup is heavily inspired and copied from https://github.com/soyuka
 
 You can of course adjust it to your needs, but I like it like this. 
 
-Now we need to create the workflow it self.
+Now we need to create the workflow itself.
 
 File: `.github/workflows/readme-write.yml`
 ```yaml
