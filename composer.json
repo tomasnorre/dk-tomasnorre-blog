@@ -5,8 +5,8 @@
         "php": "^8.3",
         "tightenco/jigsaw": "^1.8",
         "samdark/sitemap": "^2.2.1",
-        "illuminate/collections": "^12.31",
-        "illuminate/support": "^12.31"
+        "illuminate/collections": "^12.34",
+        "illuminate/support": "^12.34"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
