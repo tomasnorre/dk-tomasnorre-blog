@@ -33,7 +33,7 @@
       x-data="{ showMobileMenu: false}">
 <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
-        <div class="flex items-center">
+        <div class="flex flex-1 items-center">
             <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                 <img src="/assets/images/tomasnorre_small.png" alt="Logo showing me as a cartoon like character"
                      class="h-12 mr-2">

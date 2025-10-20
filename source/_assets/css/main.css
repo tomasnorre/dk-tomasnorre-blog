@@ -47,6 +47,9 @@ code.hljs {
         @apply not-italic;
     }
 }
+header h2 {
+    @apply mt-4;
+}
 
 h1,
 h2,
