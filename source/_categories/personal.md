@@ -1,5 +1,5 @@
 ---
 extends: _layouts.category
-title: Blog
-description: Posts related to my blog
+title: Personal
+description: Posts related to me as a person
 ---
