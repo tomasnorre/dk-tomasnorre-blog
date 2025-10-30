@@ -165,3 +165,12 @@ pre {
     --font-sans: 'NunitoSans', sans-serif;
     --font-mono: 'JetBrainsMono', monospace;
 }
+
+.category-header h1 {
+    @apply my-0;
+    margin-left: -2px;
+}
+
+.category-header p {
+    @apply m-0;
+}

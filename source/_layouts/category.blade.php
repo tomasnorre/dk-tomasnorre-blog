@@ -1,7 +1,13 @@
 @extends('_layouts.main')
 
 @section('body')
-    <h1>{{ $page->title }}</h1>
+    <div class="category-header">
+        <span class="text-xl font-extrabold">Category</span>
+        <h1 class="text-4xl font-bold">{{ $page->title }}</h1>
+        <p>
+            {{ $page->description }}
+        </p>
+    </div>
 
     <div class="text-2xl border-b border-blue-200 mb-6 pb-10">
         @yield('content')
