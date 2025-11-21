@@ -39,6 +39,27 @@
         If you find any typos or incorrect information, please reach out on <a href="https://github.com/tomasnorre/dk-tomasnorre-blog">GitHub</a> so that we can have the mistake corrected.
     </div>
 
+        <div class="bg-green-100 rounded-2xl shadow-md mb-6 overflow-hidden">
+            <div class="p-6">
+                <div class="flex">
+                    <div class="pr-10 hidden lg:block">
+                        <img src="/assets/img/7th-green-logo.svg" class="h-36" alt="7th Green logo, showing 3 elephants">
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold mb-2">Hire Me?</h2>
+                        <p>
+                            I work as a freelancer in my company <a href="https://7th-green.com">7th Green</a>, specializing in PHP development and DevOps.
+                            My main strengths include TYPO3, PHP in general, DevOps and Automation.
+                        </p>
+                        <p>
+                            Please reach out, I will be happy to talk about your project.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     <nav class="flex justify-between text-sm md:text-base">
         <div>
             @if ($next = $page->getNext())
