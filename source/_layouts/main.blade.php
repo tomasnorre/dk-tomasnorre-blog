@@ -26,7 +26,7 @@
     @viteRefresh()
     <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
     <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
-    <link rel="canonical" href="{{ $page->getUrl() }}">
+    <link rel="canonical" href="{{ $page->getUrl() }}/">
 </head>
 
 <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans"
