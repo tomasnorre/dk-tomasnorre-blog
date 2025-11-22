@@ -67,6 +67,9 @@
         <a href="https://phpc.social/@tomasnorre" aria-label="Link to my Mastodon profile">
             <box-icon type='logo' name='Mastodon'></box-icon>
         </a>
+        <a href="https://www.linkedin.com/in/tomasnorre/" aria-label="Link to my LinkedIn profile">
+            <box-icon type='logo' name='LinkedIn'></box-icon>
+        </a>
         <a href="https://7th-green.com" aria-label="Link to 7th Green">
             <img src="/assets/img/7th-green-logo.svg" class="h-5 inline mb-2" alt="7th Green logo, showing 3 elephants">
         </a>
