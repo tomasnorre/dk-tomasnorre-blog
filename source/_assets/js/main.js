@@ -1,3 +1,4 @@
+import '@fortawesome/fontawesome-free/js/all.min';
 import axios from 'axios';
 window.axios = axios;
 
@@ -10,7 +11,6 @@ Alpine.start();
 
 import hljs from 'highlight.js/lib/core';
 import 'highlight.js/styles/default.css';
-import 'boxicons';
 
 import bash from 'highlight.js/lib/languages/bash';
 import css from 'highlight.js/lib/languages/css';

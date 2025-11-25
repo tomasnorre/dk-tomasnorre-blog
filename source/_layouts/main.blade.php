@@ -57,21 +57,21 @@
 </main>
 
 <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-    <p id="footer-links" class="mb-8 flex items-center justify-center w-full gap-5">
+    <p id="footer-links" class="mb-8 flex items-center justify-center w-full gap-4">
         <a href="https://twitter.com/tomasnorre" aria-label="Link to my Twitter profile">
-            <box-icon type='logo' name='Twitter'></box-icon>
+            <i class="fill-current text-2xl fa-brands fa-square-x-twitter"></i>
         </a>
         <a href="https://github.com/tomasnorre" aria-label="Link to my GitHub profile">
-            <box-icon type='logo' name='GitHub'></box-icon>
+            <i class="fill-current text-2xl fa-brands fa-github"></i>
         </a>
         <a href="https://phpc.social/@tomasnorre" aria-label="Link to my Mastodon profile">
-            <box-icon type='logo' name='Mastodon'></box-icon>
+            <i class="fill-current text-2xl fa-brands fa-mastodon"></i>
         </a>
         <a href="https://www.linkedin.com/in/tomasnorre/" aria-label="Link to my LinkedIn profile">
-            <box-icon type='logo' name='LinkedIn'></box-icon>
+            <i class="fill-current text-2xl fa-brands fa-linkedin"></i>
         </a>
         <a href="https://7th-green.com" aria-label="Link to 7th Green">
-            <img src="/assets/img/7th-green-logo.svg" class="h-5 inline mb-2" alt="7th Green logo, showing 3 elephants">
+            <img src="/assets/img/7th-green-logo.svg" class="h-5 inline mb-1" alt="7th Green logo, showing 3 elephants">
         </a>
     </p>
     <div class="flex flex-col md:flex-row justify-center ">
