@@ -13,11 +13,9 @@
         @yield('content')
     </div>
 
-    @foreach ($page->posts($posts) as $post)
-        @include('_components.post-preview-inline')
-
-        @if (! $loop->last)
-            <hr class="w-full border-b mt-2 mb-6">
-        @endif
-    @endforeach
+    <div class="grid md:grid-cols-2 gap-6">
+        @foreach ($page->posts($posts) as $post)
+            @include('_components.post-preview-inline')
+        @endforeach
+    </div>
 @stop
