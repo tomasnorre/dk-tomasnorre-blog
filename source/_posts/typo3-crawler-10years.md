@@ -19,8 +19,9 @@ open source which got me into [TYPO3 CMS](https://typo3.org) in 2004. I haven't 
 
 ## TYPO3 Crawler
 
-The [TYPO3 Crawler ](https://extensions.typo3.org/extension/crawler) was uploaded to the public first time 22nd Dec 2005, so it's have been there for quite some time.
-Today 10 years ago, on the 14th of July 2025, I did [my very first contribution to the crawler](https://github.com/tomasnorre/crawler/commit/aaa8cb8f95a7c87a323e7e854543c3d16be0b566
+The [TYPO3 Crawler ](https://extensions.typo3.org/extension/crawler) was uploaded to the public first time 22nd Dec 2005, so it have been there for quite some time.
+Today 10 years ago, on the 14th of July 2015, I did [my very first contribution to the crawler](https://github.
+com/tomasnorre/crawler/commit/aaa8cb8f95a7c87a323e7e854543c3d16be0b566
 ). 
 
 
