@@ -1,6 +1,6 @@
 {
     "name": "tomasnorre/blog",
-    "description": "My blog",
+    "description": "My blog, https://blog.tomasnorre.dk",
     "require": {
         "php": "^8.3",
         "tightenco/jigsaw": "^1.8",
