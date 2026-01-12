@@ -8,7 +8,7 @@
 
     <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
     <meta property="og:type" content="{{ $page->type ?? 'website' }}"/>
-    <meta property="og:url" content="{{ $page->getUrl() }}"/>
+    <meta property="og:url" content="{{ $page->getUrl() }}/"/>
     <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}"/>
 
     @if ($page->cover_image)
