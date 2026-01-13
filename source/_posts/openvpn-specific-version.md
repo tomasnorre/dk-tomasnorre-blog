@@ -11,19 +11,19 @@ featured: true
 categories: [development,devops]
 ---
 
-From time to time VPN servers are using older software, so one would need an older OpenVPN version install, which isn't 
-always in the repositories of the Linux distribution of choice.
+From time to time, VPN servers use older software, requiring an older OpenVPN version that isn't
+always available in the repositories of your chosen Linux distribution.
 
-**This posts shows you have to build OpenVPN 2.5.9 from source.**
+**This post shows you how to build OpenVPN 2.5.9 from source.**
 
 *Disclaimer*
 
 Building OpenVPN 2.5.9 from source does NOT install:
 
-* NetworkManager OpenVPN plugin
+* The NetworkManager OpenVPN plugin
 * GUI import capability (.ovpn files)
 
-That functionality is provided by network-manager-openvpn, which is an apt package and is safe to install even if OpenVPN itself is held or removed.
+That functionality is provided by `network-manager-openvpn`, which is an apt package and is safe to install even if OpenVPN itself is held or removed.
 
 **Install required dependencies**
 
@@ -38,7 +38,7 @@ sudo apt install -y build-essential autoconf automake libtool pkg-config \
 ```bash
 wget https://swupdate.openvpn.org/community/releases/openvpn-2.5.9.tar.gz
 ```
-Extract: 
+Extract the files:
 
 ```bash 
 tar xzf openvpn-2.5.9.tar.gz
@@ -74,17 +74,17 @@ You should see OpenVPN 2.5.9.
 
 **Symlink and Hold**
 
-To ensure that the package isn't getting overwritten by you package manager, if using `apt` (Debian based distros)
-you can do following
+To ensure that the package isn't overwritten by your package manager when using apt (Debian-based distros), you can use 
+the following command:
 
 ```bash 
 sudo apt-mark hold openvpn
 ```
 
-To symlink the already existing `openvpn`-binary you can create a symlink from the newly create installed version.
+To use the newly installed version as the default system command, create a symlink to the existing `openvpn` binary path:
 
 ```bash 
 sudo ln -nfs /usr/local/sbin/openvpn /usr/sbin/openvpn
 ```
 
-Now you are ready to connect to the VPN server.
+Now you are ready to connect to your VPN server.
