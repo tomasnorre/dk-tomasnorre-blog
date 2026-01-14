@@ -49,5 +49,5 @@ immediately stop. This constant "pulsing" is quite annoying. I see five potentia
 For now, I’m frequently using noise-canceling headphones to block it out, but it still bothers me when I’m not wearing them.
 
 Currently, I cannot recommend this GPU for Linux users. I'm not sure how it performs on Windows, as I don't run Windows at all. 
-To be fair, I should have researched the specific Linux compatibility more thoroughly before buying—I did see it mentioned on forums, 
+To be fair, I should have researched the specific Linux compatibility more thoroughly before buying, I did see it mentioned on forums, 
 so I take responsibility for the oversight. I just wish I had the technical knowledge to write a driver fix myself!
