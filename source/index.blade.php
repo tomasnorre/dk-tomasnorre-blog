@@ -2,7 +2,7 @@
 
 @section('body')
     @foreach ($posts->where('date', true)->take(1) as $featuredPost)
-        <div class="relative group grid grid-cols-1 lg:grid-cols-12 gap-0 mb-16 overflow-hidden rounded-3xl bg-slate-50 border border-slate-100">
+        <div class="relative group grid grid-cols-1 lg:grid-cols-12 gap-0 mb-6 overflow-hidden rounded-3xl bg-slate-50 border border-slate-100">
 
             {{-- Image Side --}}
             <div class="lg:col-span-7 h-64 lg:h-[450px] overflow-hidden">
