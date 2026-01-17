@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/sparkle-intel-arc-a380.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@jrkorpa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jr Korpa</a> on <a href="https://unsplash.com/photos/pink-and-black-wallpaper-9XngoIpxcEo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Sparkle Intel Arc A380 ELF GPU'
 featured: true
-categories: [linux,opensource]
+categories: [linux,opensource,ubuntu]
 ---
 
 I recently finished a new build, and the performance gains over my last setup are impressive.

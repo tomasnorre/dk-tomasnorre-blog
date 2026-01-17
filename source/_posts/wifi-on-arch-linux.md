@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/wifi-on-arch-linux.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@lukash?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lukas</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-table-uZkHtWsi2dE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Laptop with Arch Linux sticker'
 featured: true
-categories: [linux]
+categories: [linux,arch]
 ---
 
 This is a short intro on how to set up Wi-Fi on Arch Linux.

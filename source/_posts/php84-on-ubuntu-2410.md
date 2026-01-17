@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/php84-on-ubuntu-2410.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@benofthenorth">Ben Griffiths</a> on <a href="https://unsplash.com/photos/blue-elephant-figurine-on-macbook-pro-Bj6ENZDMSDY">Unsplash</a>'
 cover_alt: 'Elephpant on MacBook'
 featured: true
-categories: [development,linux]
+categories: [development,linux,ubuntu]
 ---
 
 As of December 2024, the Ondřej Surý PPA does not provide support for Ubuntu 24.10. This limitation affects the installation of PHP versions, including PHP 8.4, on this Ubuntu release.

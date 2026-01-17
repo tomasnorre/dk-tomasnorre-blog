@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/squid-proxy.webp
 cover_credit: 'Photo by <a href="https://www.pexels.com/photo/a-myopsida-in-water-15559902/">Marissa Farrow</a>'
 cover_alt: 'Squid swimming'
 featured: true
-categories: [devops]
+categories: [devops,linux,ubuntu]
 ---
 
 Do you have multiple computers on the same network fetching the same packages or content from the internet? Then a proxy server might be right for you.

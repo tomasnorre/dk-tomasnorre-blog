@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/ubuntu-on-macbook.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@6heinz3r?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gabriel Heinzer</a> on <a href="https://unsplash.com/photos/green-and-black-digital-device-xbEVM6oJ1Fs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Ubuntu Terminal'
 featured: true
-categories: [linux]
+categories: [linux,ubuntu]
 ---
 
 I have an old MacBook Pro from 2013, which my girlfriend is using for yoga only. This has not become any updates for 

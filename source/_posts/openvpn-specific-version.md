@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/openvpn-specific-version.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@privecstasy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Privecstasy</a> on <a href="https://unsplash.com/photos/person-holding-black-iphone-5-CXlqHmQy3MY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Picture of mobilephone with VPN Protected displayed on the screen'
 featured: true
-categories: [development,devops]
+categories: [development,devops,linuxm,ubuntu,debian]
 ---
 
 From time to time, VPN servers use older software, requiring an older OpenVPN version that isn't

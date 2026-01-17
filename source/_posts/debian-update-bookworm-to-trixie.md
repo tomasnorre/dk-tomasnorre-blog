@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/debian-update-bookworm-to-trixie.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@tvick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Vick</a> on <a href="https://unsplash.com/photos/cable-network-M5tzZtFCOfs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Server racks with multiple servers'
 featured: true
-categories: [opensource,linux,devops]
+categories: [opensource,linux,devops,debian]
 ---
 
 Like many other you might have choosen to run your servers on [Debian](https://debian.org), me included.
