@@ -34,7 +34,7 @@
                 <div class="mt-auto">
                     <a href="{{ $featuredPost->getUrl() }}"
                        class="inline-flex items-center gap-2 font-bold text-slate-900 hover:text-emerald-600 transition-colors underline decoration-emerald-500/30 underline-offset-8 hover:decoration-emerald-500">
-                        Read more
+                        Read More
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </a>
                 </div>
