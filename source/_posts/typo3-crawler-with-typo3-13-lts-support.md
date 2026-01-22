@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/TYPO3-Crawler-with-TYPO3-13-LTS-Support.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@an_ku_sh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ankush Minda</a> on <a href="https://unsplash.com/photos/balloons-flying-in-the-sky-TLBplYQvqn0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 cover_alt: 'Ballons released into the air'
 featured: true
-categories: [blog,development,typo3]
+categories: [opensource,development,typo3]
 ---
 
 The "latest" version of the `TYPO3 Crawler 12.0.6` comes with TYPO3 13 LTS support. It's been overdue for too long, but now it's out. 

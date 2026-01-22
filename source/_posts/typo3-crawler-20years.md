@@ -8,7 +8,7 @@ cover_image: /assets/img/posts/typo3-20years.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@richardworks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Richard Burlton</a> on <a href="https://unsplash.com/photos/lighted-candles-on-brown-cake-wUg4u1kKTXw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Picture of birthday cake'
 featured: true
-categories: [development,typo3]
+categories: [development,typo3,opensource]
 ---
 
 On December 22nd, 2025, the TYPO3 Crawler officially turned 20 years old.
