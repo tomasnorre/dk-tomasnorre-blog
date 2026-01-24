@@ -1,9 +1,9 @@
 ---
 extends: _layouts.post
 section: content
-title: How to set up self-hosted GitHub Runner
+title: How to set up a self-hosted GitHub Runner
 date: 2026-01-24
-description: How to set up self-hosted GitHub Runner
+description: How to set up a self-hosted GitHub Runner
 cover_image: /assets/img/posts/self-hosted-github-runner.webp
 cover_credit: 'Photo by <a href="https://unsplash.com/@jadonjohnson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jadon Johnson</a> on <a href="https://unsplash.com/photos/a-woman-running-on-a-running-track-at-night-7Dqwq45QfYo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 cover_alt: 'Person on a running track'
@@ -11,36 +11,31 @@ featured: true
 categories: [development,devops,ubuntu,linux]
 ---
 
-Having your own GitHub Runners can have multiple reasons
+There are several reasons to run your own GitHub Runners:
 
-* Shaving costs
-* Control
-* Runner sizes
+- Lower costs
+- More control
+- Bigger, more stable runner sizes
 
-The TYPO3 Crawler have the need for a little bigger and more stable runners that the free-tiers on GitHub. 
-I have booted up some instances at my hosting center [Hetzner](https://hetzner.cloud/?ref=ePhFT9oOaEPZ), in this post I will go through how to set one up 
-yourself.
+The TYPO3 Crawler needs runners that are a bit larger and more stable than GitHub's free tier. I've spun up instances at [Hetzner](https://hetzner.cloud/?ref=ePhFT9oOaEPZ). In this post, I'll walk through how to set one up yourself.
 
 **Disclaimer**
 
-You might need to set up a `sudo` file for the `ghr`-user that we create later, but that will depend on which rights your
-GitHub Actions will need to run, most job will without it. 
+You may need to configure `sudo` for the `ghr` user we create later. It depends on what your GitHub Actions jobs need to do, and many jobs will run fine without it.
 
-The [Hetzner](https://hetzner.cloud/?ref=ePhFT9oOaEPZ)-links is affiliate links, which will help me keep my infrastructure running for the TYPO3 Crawler.
+The [Hetzner](https://hetzner.cloud/?ref=ePhFT9oOaEPZ) links are affiliate links that help keep the TYPO3 Crawler infrastructure running.
 
 **Prerequisites**
 
-    * Server Running Ubuntu or other Debian based distro, I haven't tested others
-    * Server need to have access to the internet, but doesn't need to be accessible from the internet.
-
-Let's start.
+    - A server running Ubuntu or another Debian-based distro (others not tested)
+    - Outbound internet access (no inbound access required)
 
 **Install Docker**
 
-Setting up and installing docker can be done with an install script from docker itself. You can also find line for line tutorials on e.g. 
-[DigitalOcean - How to Install Docker on Ubuntu – Step-by-Step Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
+You can install Docker using the official script. Line-by-line guides are also available, e.g.
+[DigitalOcean - How to Install Docker on Ubuntu - Step-by-Step Guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
 
-I do it with the script from docker.com
+I use the official script:
 
 ```bash
 sudo apt update && sudo apt upgrade -y # Ensure all dependencies are up to date
@@ -51,17 +46,16 @@ sudo sh get-docker.sh
 **Add user**
 
 ```bash
-useradd ghr # Answer the questions asked 
+useradd ghr # Answer the questions asked
 usermod -aG sudo ghr
 sudo usermod -aG docker ghr
 ```
 
-**Install and Setup Runner**'
+**Install and set up the runner**
 
-If you go to your GitHub Repository under Settings > Actions > Runners, you will see a button "New self-hosted runner", 
-when clicking it, it will show you the commands as below.
+In your GitHub repository, go to Settings -> Actions -> Runners and click "New self-hosted runner." GitHub will show you the commands below.
 
-I stop before the `./run.sh`-step in the guide, as I run my GitHub Runner as a service. Will show you later. 
+I stop before the `./run.sh` step because I run the runner as a service (shown later).
 
 ```bash
 # login as ghr e.g. `su - ghr` from your root login
@@ -70,33 +64,32 @@ curl -o actions-runner-linux-x64-2.331.0.tar.gz -L https://github.com/actions/ru
 echo "5fcc01bd546ba5c3f1291c2803658ebd3cedb3836489eda3be357d41bfcf28a7  actions-runner-linux-x64-2.331.0.tar.gz" | shasum -a 256 -c
 tar xzf ./actions-runner-linux-x64-2.331.0.tar.gz
 
-./config.sh --url {GitHubUrl} --token {token} # You get this information from GitHub 
-
+./config.sh --url {GitHubUrl} --token {token} # You get this information from GitHub
 ```
 
-**Runner Hooks**
+**Runner hooks**
 
-There are multiple hooks for the runners that can be defined in the `.env`-file of the `actions-runner` directory. 
-So far I only use one hook, the `ACTIONS_RUNNER_HOOK_JOB_STARTED` which allows me to wipe the workspace, before starting a new job.
+You can define runner hooks in the `.env` file inside `actions-runner`. I use `ACTIONS_RUNNER_HOOK_JOB_STARTED` to wipe the workspace before each new job.
 
-For that I need a `cleanup.sh`-script
+Create `cleanup.sh`:
 
 ```bash
 #!/bin/bash
-# Use sudo to force remove the problematic directory
+# Use sudo to force-remove the workspace
 sudo /usr/bin/rm -rf "$GITHUB_WORKSPACE"
 # Re-create it so the runner has a place to land
 mkdir -p "$GITHUB_WORKSPACE"
 ```
 
-And add the following line to `.env`-file
+Then add this to `.env`:
 
 ```
 ACTIONS_RUNNER_HOOK_JOB_STARTED=/home/ghr/actions-runner/cleanup.sh
 ```
-**Setup GitHub Runner as a Service**
 
-The GitHub Runner comes with the logic already in the tar.gz that we downloaded earlier, it "just" use it.
+**Set up the runner as a service**
+
+The runner tarball already includes the service scripts.
 
 ```bash
 sudo ./svc.sh install
@@ -104,17 +97,13 @@ sudo ./svc.sh start
 sudo ./svc.sh status
 ```
 
-Now the GitHub Runner will run and start automatically on server reboot.
+The runner will now start automatically on reboot.
 
-You can now adjust your GitHub Action yaml files to 
+Update your workflow YAML to use it:
 
-```yaml 
-# Use this YAML in your workflow file for each job
+```yaml
+# Use this in your workflow file for each job
 runs-on: self-hosted
 ```
-and you jobs will run on your self-hosted runner.
 
 Have fun!
-
-
-
