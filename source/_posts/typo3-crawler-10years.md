@@ -9,6 +9,10 @@ cover_credit: 'Photo by <a href="https://unsplash.com/@ashleew?utm_content=credi
 cover_alt: 'Spiderweb with waterdrops on it'
 featured: true
 categories: [development,opensource,typo3]
+related_slugs:
+  - typo3-crawler-20years
+  - typo3-crawler-with-typo3-13-lts-support
+  - typo3-crawler-with-typo3-14-support
 ---
 
 Somewhen in 1998, I didn't have the money for buying my Licenses for my Windows, and I started to look for other legal alternatives.
@@ -19,7 +23,7 @@ open source which got me into [TYPO3 CMS](https://typo3.org) in 2004. I haven't 
 
 ## TYPO3 Crawler
 
-The [TYPO3 Crawler ](https://extensions.typo3.org/extension/crawler) was uploaded to the public first time 22nd Dec 2005, so it have been there for quite some time.
+The [TYPO3 Crawler ](https://extensions.typo3.org/extension/crawler) was uploaded to the public the first time 22nd Dec 2005, so it have been there for quite some time.
 Today 10 years ago, on the 14th of July 2015, I did [my very first contribution to the crawler](https://github.
 com/tomasnorre/crawler/commit/aaa8cb8f95a7c87a323e7e854543c3d16be0b566
 ). 

@@ -9,13 +9,17 @@ cover_credit: 'Photo by <a href="https://unsplash.com/@matthewwaring?utm_source=
 cover_alt: 'Wall with a Life Ring'
 featured: true
 categories: [development,typo3,opensource]
+related_slugs:
+  - typo3-crawler-10years
+  - typo3-crawler-20years
+  - typo3-crawler-with-typo3-13-lts-support
 ---
 
-Earlier this week, TYPO3 14.1 was released, I'm happy to announce that the TYPO3 Crawler (dev-main branch), now supports TYPO3 14 and PHP 8.5.
+Earlier this week, TYPO3 14.1 was released. I'm happy to announce that the TYPO3 Crawler (dev-main branch) now supports TYPO3 14 and PHP 8.5.
 
 There is no release yet of the TYPO3 Crawler, but one can you dev-main if you want to. 
 
-The changes happened so far.
+The changes have happened so far.
 ```txt
 Crawler dev-main as of 22nd of January 2026
 

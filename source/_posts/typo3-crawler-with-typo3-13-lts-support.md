@@ -9,6 +9,10 @@ cover_credit: 'Photo by <a href="https://unsplash.com/@an_ku_sh?utm_content=cred
 cover_alt: 'Ballons released into the air'
 featured: true
 categories: [opensource,development,typo3]
+related_slugs:
+  - typo3-crawler-10years
+  - typo3-crawler-20years
+  - typo3-crawler-with-typo3-14-support
 ---
 
 The "latest" version of the `TYPO3 Crawler 12.0.6` comes with TYPO3 13 LTS support. It's been overdue for too long, but now it's out. 

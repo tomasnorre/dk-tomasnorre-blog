@@ -9,6 +9,10 @@ cover_credit: 'Photo by <a href="https://unsplash.com/@richardworks?utm_source=u
 cover_alt: 'Picture of birthday cake'
 featured: true
 categories: [development,typo3,opensource]
+related_slugs:
+  - typo3-crawler-10years
+  - typo3-crawler-with-typo3-13-lts-support
+  - typo3-crawler-with-typo3-14-support
 ---
 
 On December 22nd, 2025, the TYPO3 Crawler officially turned 20 years old.

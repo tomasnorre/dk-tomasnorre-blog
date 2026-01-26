@@ -9,6 +9,9 @@ cover_credit: 'Photo by <a href="https://unsplash.com/@afgprogrammer?utm_content
 cover_alt: 'A computer keyboard with RGB backlight'
 featured: true
 categories: [blog]
+related_slugs:
+  - kamal-deploy
+  - setting-up-a-blog-with-jigsaw
 ---
 
 I don't know if you are aware, but my blog is fully public at [https://github.com/tomasnorre/dk-tomasnorre-blog](https://github.com/tomasnorre/dk-tomasnorre-blog), you can have a peak, get inspired on how to setup your own blog.
