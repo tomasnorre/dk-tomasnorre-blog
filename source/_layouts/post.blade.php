@@ -39,25 +39,49 @@
         If you find any typos or incorrect information, please reach out on <a href="https://github.com/tomasnorre/dk-tomasnorre-blog">GitHub</a> so that we can have the mistake corrected.
     </div>
 
-        <div class="bg-green-100 rounded-2xl shadow-md mb-6 overflow-hidden">
-            <div class="p-6">
-                <div class="flex">
-                    <div class="pr-10 hidden lg:block">
-                        <img src="/assets/img/7th-green-logo.svg" class="h-36" alt="7th Green logo, showing 3 elephants">
-                    </div>
-                    <div>
-                        <h2 class="text-xl font-bold mb-2">Hire Me?</h2>
-                        <p>
-                            I work as a freelancer in my company <a href="https://7th-green.com">7th Green</a>, specializing in PHP development and DevOps.
-                            My main strengths include TYPO3, PHP in general, DevOps and Automation.
-                        </p>
-                        <p>
-                            Please reach out, I will be happy to talk about your project.
-                        </p>
+        @php
+            $hasRelated = $page->related_posts && $page->related_posts->count() > 0;
+        @endphp
+
+        <div class="grid grid-cols-1 {{ $hasRelated ? 'lg:grid-cols-2' : '' }} gap-6 mb-6">
+            {{-- Hire Me Box --}}
+            <div class="bg-green-100 rounded-2xl shadow-md overflow-hidden flex flex-col">
+                <div class="p-6 grow">
+                    <h2 class="text-xl font-bold mb-2">Want to Hire Me?</h2>
+                    <div class="flex">
+                        <div class="pr-10 {{ $hasRelated ? 'hidden' : 'hidden lg:block' }} ">
+                            <img src="/assets/img/7th-green-logo.svg" class="h-36" alt="7th Green logo, showing 3 elephants">
+                        </div>
+                        <div>
+                    <p class="text-md">
+                        I work as a freelancer in my company <a href="https://7th-green.com" class="underline font-semibold text-green-900">7th Green</a>.
+                        My strengths include TYPO3, PHP, DevOps and Automation.
+                    </p>
+                    <p class="text-md mt-2">
+                        Reach out, I'd be happy to talk about your project.
+                    </p>
+                        </div>
                     </div>
                 </div>
-
             </div>
+
+            {{-- Related Articles Box --}}
+            @if($hasRelated)
+                <div class="bg-green-200 rounded-2xl shadow-md overflow-hidden flex flex-col">
+                    <div class="p-6 grow">
+                        <h2 class="text-xl font-bold mb-2">Related Articles</h2>
+                        <ul class="list-none m-0 p-0 space-y-3 pt-2">
+                            @foreach($page->related_posts as $related)
+                                <li class="text-md">
+                                    <a href="{{ $related->getUrl() }}" class="block text-blue-800 hover:text-blue-600 font-medium leading-tight">
+                                        {{ $related->title }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            @endif
         </div>
 
     <nav class="flex justify-between text-sm md:text-base">
