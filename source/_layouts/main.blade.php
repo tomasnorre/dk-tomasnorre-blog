@@ -74,7 +74,7 @@
             <img src="/assets/img/7th-green-logo.svg" class="h-5 inline mb-1" alt="7th Green logo, showing 3 elephants">
         </a>
     </p>
-    <div class="flex flex-col md:flex-row justify-center ">
+    <div class="flex flex-col md:flex-row justify-center text-base-content">
         <span class="md:mr-2">
             &copy; <a href="{{ $page->baseUrl }}" title="Tomas Norre">Tomas Norre</a> {{ date('Y') }}.
         </span>

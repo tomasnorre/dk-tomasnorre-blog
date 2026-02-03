@@ -13,10 +13,18 @@ body {
 a {
     @apply font-semibold;
     @apply no-underline;
-
+    @apply link-primary;
     &:hover {
-        @apply text-blue-800;
+        @apply link-info;
     }
+}
+
+a.active {
+    @apply border-b-2;
+}
+
+a.search-link {
+    @apply text-base-content;
 }
 
 blockquote {

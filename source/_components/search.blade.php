@@ -71,7 +71,7 @@
             <div id="search-result" class="flex flex-col bg-base-100 border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-search mx-4 md:mx-0">
                 <template x-for="(result, index) in results">
                     <a
-                            class="bg-base-200 hover:bg-base-100 border-b border-blue-400 text-xl cursor-pointer p-4"
+                            class="search-link bg-base-200 hover:bg-base-100 border-b border-blue-400 text-xl cursor-pointer p-4"
                             :class="{ 'rounded-b-lg': (index === results.length - 1) }"
                             :href="result.item.link"
                             :title="result.item.title"
