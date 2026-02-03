@@ -41,7 +41,7 @@
                 id="search"
                 x-model="query"
                 x-ref="search"
-                class="relative block h-10 w-full lg:w-1/2 lg:focus:w-3/4 bg-base border border-gray-500 focus:border-blue-400 outline-none cursor-pointer text-gray-700 px-4 pb-0 pt-px transition-all duration-200 ease-out bg-[url('/assets/img/magnifying-glass.svg')] bg-no-repeat bg-[0.8rem] indent-[1.2em]"
+                class="relative block h-10 w-full lg:w-1/2 lg:focus:w-3/4 bg-base border border-gray-500 focus:border-blue-400 outline-none cursor-pointer text-base-content px-4 pb-0 pt-px transition-all duration-200 ease-out bg-[url('/assets/img/magnifying-glass.svg')] bg-no-repeat bg-[0.8rem] indent-[1.2em]"
                 :class="{ 'rounded-b-none rounded-t-lg': query, 'rounded-3xl': !query }"
                 autocomplete="off"
                 name="search"
@@ -68,10 +68,10 @@
                 x-transition:leave-end="opacity-0"
                 class="absolute left-0 right-0 md:inset-auto w-full lg:w-3/4 text-left mb-4 md:mt-10"
         >
-            <div id="search-result" class="flex flex-col bg-yellow-500 border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-search mx-4 md:mx-0">
+            <div id="search-result" class="flex flex-col bg-base-100 border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-search mx-4 md:mx-0">
                 <template x-for="(result, index) in results">
                     <a
-                            class="bg-base-content hover:bg-blue-100 border-b border-blue-400 text-xl cursor-pointer p-4"
+                            class="bg-base-200 hover:bg-base-100 border-b border-blue-400 text-xl cursor-pointer p-4"
                             :class="{ 'rounded-b-lg': (index === results.length - 1) }"
                             :href="result.item.link"
                             :title="result.item.title"
@@ -80,12 +80,12 @@
                     >
                         <span x-html="result.item.title"></span>
 
-                        <span class="block font-normal text-content-base text-sm my-1" x-html="result.item.snippet"></span>
+                        <span class="block font-normal text-content-base text-sm" x-html="result.item.snippet"></span>
                     </a>
                 </template>
                 <div
                         x-show="! results.length"
-                        class="bg-red-500 w-full hover:bg-blue-100 border-b border-blue-400 rounded-b-lg shadow cursor-pointer p-4"
+                        class="bg-base-200 w-full hover:bg-base-100 border-b text-base-content border-blue-400 rounded-b-lg shadow cursor-pointer p-4"
                 >
                     <p class="my-0">No results for <strong x-html="query"></strong></p>
                 </div>

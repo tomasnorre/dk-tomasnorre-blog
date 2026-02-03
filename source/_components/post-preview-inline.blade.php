@@ -1,4 +1,4 @@
-<div class="bg-base rounded-2xl shadow-md overflow-hidden flex flex-col">
+<div class="bg-base rounded-2xl shadow-md overflow-hidden flex flex-col border-base-content border">
     <img src="{{ $post->cover_image }}" alt="{{ $post->cover_alt }}" class="w-full h-48 object-cover" />
 
     <!-- Make the inner content grow with flex -->

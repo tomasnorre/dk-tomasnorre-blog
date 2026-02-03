@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{ showMobileMenu: false, darkMode: $persist(false)}" :data-theme="darkMode ? 'dark' : 'bumblebee'">
+<html lang="en" x-data="{ showMobileMenu: false, darkMode: $persist(false)}" :data-theme="darkMode ? 'dim' : 'light '">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -58,7 +58,7 @@
 
 <footer class="bg-base text-center text-sm mt-12 py-4" role="contentinfo">
     <p id="footer-links" class="mb-8 flex items-center justify-center w-full gap-4">
-        <a href="https://twitter.com/tomasnorre" aria-label="Link to my Twitter profile">
+        <a href="https://twitter.com/tomasnorre" class="link link-primary link-hover" aria-label="Link to my Twitter profile">
             <i class="fill-current text-2xl fa-brands fa-square-x-twitter"></i>
         </a>
         <a href="https://github.com/tomasnorre" aria-label="Link to my GitHub profile">
