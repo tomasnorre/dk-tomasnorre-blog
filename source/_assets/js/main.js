@@ -3,10 +3,12 @@ import axios from 'axios';
 window.axios = axios;
 
 import Alpine from "alpinejs";
+import persist from "@alpinejs/persist";
 import Fuse from "fuse.js";
 
 window.Fuse = Fuse;
 window.Alpine = Alpine;
+Alpine.plugin(persist)
 Alpine.start();
 
 import hljs from 'highlight.js/lib/core';
