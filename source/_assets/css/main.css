@@ -7,7 +7,6 @@
 /* _base.css */
 body {
     font-size: 17px;
-    @apply text-gray-700;
 }
 
 a {
@@ -27,6 +26,14 @@ a.search-link {
     @apply text-base-content;
 }
 
+a.category-link {
+    @apply text-neutral-content;
+
+    &:hover {
+        @apply text-success;
+    }
+}
+
 blockquote {
     @apply border-blue-400;
     @apply border-l-4;
@@ -34,12 +41,13 @@ blockquote {
     @apply italic;
     @apply my-8;
     @apply pl-6;
-    @apply text-gray-800;
+    /*@apply text-gray-800;*/
     @apply text-lg;
 }
 
 code {
-    @apply bg-gray-300;
+    @apply bg-success;
+    @apply text-success-content;
     @apply px-2;
     @apply py-px;
     @apply rounded;
@@ -70,7 +78,6 @@ h6 {
     @apply leading-tight;
     @apply mb-4;
     @apply mt-8;
-    /*@apply text-gray-700;*/
 
     &:first-child {
         @apply mt-0;

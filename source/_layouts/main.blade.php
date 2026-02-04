@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{ showMobileMenu: false, darkMode: $persist(false)}" :data-theme="darkMode ? 'dim' : 'light '">
+<html lang="en" x-data="{ showMobileMenu: false, darkMode: $persist(false)}" :data-theme="darkMode ? 'dim' : 'nord'">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

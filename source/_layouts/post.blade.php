@@ -26,7 +26,7 @@
             <a
                 href="{{ '/blog/categories/' . $category }}"
                 title="View posts in {{ $category }}"
-                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded-2xl mr-4 px-3 pt-px"
+                class="category-link inline-block bg-neutral leading-loose tracking-wide uppercase text-xs font-bold rounded-2xl mr-4 px-3 pt-px"
             >{{ $category }}</a>
         @endforeach
     @endif
@@ -35,7 +35,7 @@
         @yield('content')
     </div>
 
-    <div class="rounded-2xl px-3 py-3 bg-green-300 text-green-800 font-bold text-base mb-10">
+    <div class="rounded-2xl px-3 py-3 bg-green-300 text-gray-700 font-bold text-base mb-10">
         If you find any typos or incorrect information, please reach out on <a href="https://github.com/tomasnorre/dk-tomasnorre-blog">GitHub</a> so that we can have the mistake corrected.
     </div>
 
@@ -45,7 +45,7 @@
 
         <div class="grid grid-cols-1 {{ $hasRelated ? 'lg:grid-cols-2' : '' }} gap-6 mb-6">
             {{-- Hire Me Box --}}
-            <div class="bg-green-100 rounded-2xl shadow-md overflow-hidden flex flex-col">
+            <div class="bg-green-100 text-accent-content rounded-2xl shadow-md overflow-hidden flex flex-col">
                 <div class="p-6 grow">
                     <h2 class="text-xl font-bold mb-2">Want to Hire Me?</h2>
                     <div class="flex">
