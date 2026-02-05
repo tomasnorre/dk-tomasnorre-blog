@@ -29,14 +29,14 @@
     <link rel="canonical" href="{{ $page->getUrl() }}/">
 </head>
 
-<body class="flex flex-col justify-between min-h-screen bg-base text-base-content leading-normal font-sans">
-<header class="flex items-center shadow bg-base-200 border-b h-24 py-4" role="banner">
+<body class="flex flex-col justify-between min-h-screen leading-normal font-sans bg-base-200">
+<header class="flex items-center shadow bg-base-300 border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div class="flex flex-1 items-center">
             <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                 <img src="/assets/images/tomasnorre_small.png" alt="Logo showing me as a cartoon like character"
                      class="h-12 mr-2">
-                <h2 class="text-lg md:text-2xl font-semibold my-0">{{ $page->siteName }}</h2>
+                <h2 class="text-lg md:text-2xl my-0">{{ $page->siteName }}</h2>
             </a>
         </div>
         <div id="vue-search" class="flex flex-1 justify-end items-center">
@@ -52,7 +52,7 @@
 
 @include('_nav.menu-responsive')
 
-<main class="max-w-6xl mx-auto px-4 py-10 text-base-content">
+<main class="max-w-6xl mx-auto px-4 py-10 bg-base-200 text-base-content">
     @yield('body')
 </main>
 
@@ -61,16 +61,16 @@
         <a href="https://twitter.com/tomasnorre" class="link link-primary link-hover" aria-label="Link to my Twitter profile">
             <i class="fill-current text-2xl fa-brands fa-square-x-twitter"></i>
         </a>
-        <a href="https://github.com/tomasnorre" aria-label="Link to my GitHub profile">
+        <a href="https://github.com/tomasnorre" class="link link-primary link-hover" aria-label="Link to my GitHub profile">
             <i class="fill-current text-2xl fa-brands fa-github"></i>
         </a>
-        <a href="https://phpc.social/@tomasnorre" aria-label="Link to my Mastodon profile">
+        <a href="https://phpc.social/@tomasnorre" class="link link-primary link-hover" aria-label="Link to my Mastodon profile">
             <i class="fill-current text-2xl fa-brands fa-mastodon"></i>
         </a>
-        <a href="https://www.linkedin.com/in/tomasnorre/" aria-label="Link to my LinkedIn profile">
+        <a href="https://www.linkedin.com/in/tomasnorre/" class="link link-primary link-hover" aria-label="Link to my LinkedIn profile">
             <i class="fill-current text-2xl fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://7th-green.com" aria-label="Link to 7th Green">
+        <a href="https://7th-green.com" class="link link-primary link-hover" aria-label="Link to 7th Green">
             <img src="/assets/img/7th-green-logo.svg" class="h-5 inline mb-1" alt="7th Green logo, showing 3 elephants">
         </a>
     </p>
@@ -80,9 +80,9 @@
         </span>
 
         <span>
-            Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten"
+            Built with <a href="http://jigsaw.tighten.co" class="link link-primary link-hover" title="Jigsaw by Tighten"
                           aria-label="Link to Jigsaw by Tightens website, the tool used for this blog">Jigsaw</a>
-            and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework"
+            and <a href="https://tailwindcss.com"  class="link link-primary link-hover" title="Tailwind CSS, a utility-first CSS framework"
                    aria-label="Link to Tailwindcss website, the css framework used for this blog">Tailwind CSS</a>.
         </span>
     </div>

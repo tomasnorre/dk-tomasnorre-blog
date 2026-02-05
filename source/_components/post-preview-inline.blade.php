@@ -8,10 +8,10 @@
         <p class="text-sm text-base-content">
             {{ $post->getDate()->format('F j, Y') }}
         </p>
-        <h2 class="card-title text-xl font-bold">
+        <h2 class="">
             {{ $post->title }}
         </h2>
-        <p class="text-lg">{!! $post->getExcerpt(200) !!}</p>
+        <p class="text-lg line-clamp-3 mb-6 leading-relaxed">{!! $post->getExcerpt(200) !!}</p>
         <div class="card-actions justify-end">
             <a href="{{ $post->getUrl() }}" class="btn btn-primary">Read More →</a>
         </div>

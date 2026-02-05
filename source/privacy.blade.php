@@ -1,15 +1,15 @@
 ---
 title: Privacy
-description:
+description: Privacy Policy for {{ $page->siteName }}
 ---
 @extends('_layouts.main')
 
 @section('body')
 
-    <div id="privacy">
-        <h1>Privacy Policy for {{ $page->siteAuthor }}</h1>
+    <div class="content">
+        <h1>Privacy Policy for {{ $page->siteName }}</h1>
 
-        <p>At {{ $page->siteName }}, accessible from {{ $page->baseUrl }}, one of our main priorities is the privacy of
+        <p>At {{ $page->siteName }}, accessible from <a href="{{ $page->baseUrl }}">{{ $page->baseUrl }}</a>, one of our main priorities is the privacy of
             our visitors. This Privacy Policy document contains types of information that is collected and recorded
             by {{ $page->siteName }} and how we use it.</p>
 
