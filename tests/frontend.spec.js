@@ -33,6 +33,8 @@ test('social media icons', async ({page}) => {
     await expect(page.locator('#footer-links > a:nth-child(1)')).toBeVisible();
     await expect(page.locator('#footer-links > a:nth-child(2)')).toBeVisible();
     await expect(page.locator('#footer-links > a:nth-child(3)')).toBeVisible();
+    await expect(page.locator('#footer-links > a:nth-child(4)')).toBeVisible();
+    await expect(page.locator('#footer-links > a:nth-child(5)')).toBeVisible();
 });
 
 test('about', async ({page}) => {
