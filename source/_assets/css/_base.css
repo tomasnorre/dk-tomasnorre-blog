@@ -1,0 +1,160 @@
+a {
+    @apply font-semibold;
+    @apply text-primary;
+    &:hover {
+        @apply text-primary-hover;
+        @apply underline;
+        @apply underline-offset-4;
+    }
+}
+
+a.active {
+    @apply underline;
+    @apply underline-offset-8;
+}
+
+#logo-container a:hover,
+#search-container a:hover,
+a.post-content-link {
+    @apply no-underline;
+}
+
+/* enable default ul>li and ol>li - disabled by tailwindcss by default */
+@layer base {
+    ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+    }
+
+    ol {
+        list-style: decimal;
+        padding-left: 1.5rem;
+    }
+}
+
+
+
+blockquote {
+    @apply border-primary;
+    @apply border-l-4;
+    @apply font-normal;
+    @apply italic;
+    @apply my-8;
+    @apply pl-6;
+    @apply text-base-content;
+    @apply text-lg;
+}
+
+code {
+    @apply bg-base-300;
+    @apply px-2;
+    @apply py-px;
+    @apply rounded;
+    @apply text-sm;
+}
+
+code.hljs {
+    @apply bg-transparent;
+    @apply p-0;
+
+    .hljs-comment,
+    .hljs-keyword,
+    .hljs-meta {
+        @apply font-normal;
+        @apply not-italic;
+    }
+}
+
+header h2 {
+    @apply mt-4;
+}
+
+/* Default header styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply leading-tight;
+    @apply mb-4;
+    @apply mt-8;
+    @apply text-base-content;
+
+    &:first-child {
+        @apply mt-0;
+    }
+}
+h1 {
+    @apply text-3xl;
+}
+
+h2 {
+    @apply text-2xl;
+    @apply mt-4;
+}
+
+h3 {
+    @apply font-bold;
+    @apply text-xl;
+}
+
+h4 {
+    @apply font-bold;
+    @apply text-lg;
+}
+
+h5 {
+    @apply font-bold;
+}
+
+h6 {
+    @apply italic;
+}
+
+hr {
+    @apply border-b;
+    @apply border-primary;
+    @apply my-12;
+    @apply rounded-full;
+}
+
+li {
+    ul,
+    ol {
+        @apply my-0;
+        @apply ml-8;
+    }
+}
+
+ol,
+ul {
+    @apply my-4;
+}
+
+p {
+    @apply my-3;
+    @apply md:my-6;
+}
+
+pre {
+    @apply bg-base-200;
+    @apply leading-loose;
+    @apply my-6;
+    @apply overflow-x-auto;
+    @apply pt-2;
+    @apply rounded;
+    @apply shadow;
+
+    code {
+        @apply bg-transparent;
+        @apply block;
+        @apply p-0;
+        @apply leading-8;
+    }
+}
+
+::selection {
+    @apply bg-primary;
+    @apply text-primary-content;
+}

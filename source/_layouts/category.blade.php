@@ -9,7 +9,7 @@
         </p>
     </div>
 
-    <div class="text-2xl border-b border-blue-200 mb-6 pb-10">
+    <div class="text-2xl border-b border-primary mb-6 pb-10">
         @yield('content')
     </div>
 

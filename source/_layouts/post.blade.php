@@ -15,7 +15,7 @@
             <figcaption class="text-center text-sm">{!! $page->cover_credit !!}</figcaption>
         @endif
 
-        <p class="text-xl text-gray-500 mb-2">
+        <p class="text-xl text-muted mb-2">
             <date>{{ date('F j, Y', $page->date) }}</date>
         </p>
 
@@ -26,16 +26,16 @@
             <a
                 href="{{ '/blog/categories/' . $category }}"
                 title="View posts in {{ $category }}"
-                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded-2xl mr-4 px-3 pt-px"
+                class="inline-block bg-base-300 hover:bg-secondary leading-loose tracking-wide uppercase text-xs font-semibold rounded-2xl mr-4 px-3 pt-px"
             >{{ $category }}</a>
         @endforeach
     @endif
 
-    <div class="prose prose-lg prose-img:rounded-xl prose-a:text-blue-600 prose-a:font-semibold max-w-none mb-12">
+    <div class="prose prose-lg prose-img:rounded-xl prose-a:text-primary prose-a:font-semibold max-w-none mb-12">
         @yield('content')
     </div>
 
-    <div class="rounded-2xl px-3 py-3 bg-green-300 text-green-800 font-bold text-base mb-10">
+    <div class="rounded-2xl px-3 py-3 bg-secondary text-base-content text-base mb-6">
         If you find any typos or incorrect information, please reach out on <a href="https://github.com/tomasnorre/dk-tomasnorre-blog">GitHub</a> so that we can have the mistake corrected.
     </div>
 
@@ -45,7 +45,7 @@
 
         <div class="grid grid-cols-1 {{ $hasRelated ? 'lg:grid-cols-2' : '' }} gap-6 mb-6">
             {{-- Hire Me Box --}}
-            <div class="bg-green-100 rounded-2xl shadow-md overflow-hidden flex flex-col">
+            <div class="bg-secondary rounded-2xl shadow-md overflow-hidden flex flex-col">
                 <div class="p-6 grow">
                     <h2 class="text-xl font-bold mb-2">Want to Hire Me?</h2>
                     <div class="flex">
@@ -54,7 +54,7 @@
                         </div>
                         <div>
                     <p class="text-md">
-                        I work as a freelancer in my company <a href="https://7th-green.com" class="underline font-semibold text-green-900">7th Green</a>.
+                        I work as a freelancer in my company <a href="https://7th-green.com" class="font-semibold">7th Green</a>.
                         My strengths include TYPO3, PHP, DevOps and Automation.
                     </p>
                     <p class="text-md mt-2">
@@ -67,13 +67,13 @@
 
             {{-- Related Articles Box --}}
             @if($hasRelated)
-                <div class="bg-green-200 rounded-2xl shadow-md overflow-hidden flex flex-col">
+                <div class="bg-secondary rounded-2xl shadow-md overflow-hidden flex flex-col">
                     <div class="p-6 grow">
                         <h2 class="text-xl font-bold mb-2">Related Articles</h2>
                         <ul class="list-none m-0 p-0 space-y-3 pt-2">
                             @foreach($page->related_posts as $related)
                                 <li class="text-md">
-                                    <a href="{{ $related->getUrl() }}" class="block text-blue-800 hover:text-blue-600 font-medium leading-tight">
+                                    <a href="{{ $related->getUrl() }}" class="block font-medium leading-tight">
                                         {{ $related->title }}
                                     </a>
                                 </li>
@@ -84,7 +84,7 @@
             @endif
         </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
+    <nav class="flex justify-between text-base">
         <div>
             @if ($next = $page->getNext())
                 <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">

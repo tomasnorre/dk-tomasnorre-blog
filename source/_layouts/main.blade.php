@@ -29,15 +29,15 @@
     <link rel="canonical" href="{{ $page->getUrl() }}/">
 </head>
 
-<body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans"
+<body class="flex flex-col justify-between min-h-screen bg-base-100 text-base-content leading-normal font-sans text-lg"
       x-data="{ showMobileMenu: false}">
-<header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
+<header class="flex items-center shadow bg-base-50 border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
-        <div class="flex flex-1 items-center">
+        <div id="logo-container" class="flex flex-1 items-center">
             <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                 <img src="/assets/images/tomasnorre_small.png" alt="Logo showing me as a cartoon like character"
                      class="h-12 mr-2">
-                <h2 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">{{ $page->siteName }}</h2>
+                <h2 class="text-lg md:text-2xl text-primary font-semibold hover:primary-hover my-0">{{ $page->siteName }}</h2>
             </a>
         </div>
         <div id="vue-search" class="flex flex-1 justify-end items-center">
@@ -56,7 +56,7 @@
     @yield('body')
 </main>
 
-<footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+<footer class="bg-base-50 text-center text-sm mt-12 py-4" role="contentinfo">
     <p id="footer-links" class="mb-8 flex items-center justify-center w-full gap-4">
         <a href="https://twitter.com/tomasnorre" aria-label="Link to my Twitter profile">
             <i class="fill-current text-2xl fa-brands fa-square-x-twitter"></i>
