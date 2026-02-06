@@ -29,8 +29,8 @@
     <link rel="canonical" href="{{ $page->getUrl() }}/">
 </head>
 
-<body class="flex flex-col justify-between min-h-screen bg-base-100 text-base-content leading-normal font-sans text-lg"
-      x-data="{ showMobileMenu: false}">
+<body class="flex flex-col justify-between min-h-screen bg-base-100 text-base-content leading-normal font-sans text-lg" :class="darkMode ? 'dark' : ''"
+      x-data="{ showMobileMenu: false, darkMode: $persist(false)}">
 <header class="flex items-center shadow bg-base-50 border-b h-24 py-4" role="banner">
     <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
         <div id="logo-container" class="flex flex-1 items-center">
@@ -46,6 +46,7 @@
             @include('_nav.menu')
 
             @include('_nav.menu-toggle')
+            @include('_nav.mode-toggle')
         </div>
     </div>
 </header>

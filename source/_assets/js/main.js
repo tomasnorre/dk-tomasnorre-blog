@@ -3,15 +3,15 @@ import axios from 'axios';
 window.axios = axios;
 
 import Alpine from "alpinejs";
+import persist from "@alpinejs/persist";
 import Fuse from "fuse.js";
 
 window.Fuse = Fuse;
 window.Alpine = Alpine;
+Alpine.plugin(persist)
 Alpine.start();
 
 import hljs from 'highlight.js/lib/core';
-import 'highlight.js/styles/default.css';
-
 import bash from 'highlight.js/lib/languages/bash';
 import css from 'highlight.js/lib/languages/css';
 import xml from 'highlight.js/lib/languages/xml';
