@@ -19,7 +19,7 @@
                 </span>
                 </div>
 
-                <a href="{{ $featuredPost->getUrl() }}" class="group/link">
+                <a href="{{ $featuredPost->getUrl() }}" class="group/link post-content-link">
                     <h2 class="text-3xl lg:text-4xl font-black text-base-content leading-tight mb-4 transition-colors">
                         {{ $featuredPost->title }}
                     </h2>
