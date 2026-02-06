@@ -1,4 +1,4 @@
-<nav id="js-nav-menu" class="nav-menu hidden" x-show="showMobileMenu">
+<nav id="js-nav-menu" class="nav-menu" x-show="showMobileMenu">
     <ul class="my-0">
         <li class="pl-4">
             <a
