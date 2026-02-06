@@ -1,5 +1,5 @@
 <nav id="js-nav-menu" class="nav-menu" x-show="showMobileMenu">
-    <ul class="my-0">
+    <ul class="my-0 list-none">
         <li class="pl-4">
             <a
                 title="Blog"
