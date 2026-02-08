@@ -43,10 +43,7 @@ EOF
 
 **2. Set the better profile for the headphones**
 
-Here is a more technical and polished way to phrase that. I’ve corrected the terminology (it’s usually A2DP) and improved the flow:
-Improved Version
-
-"I discovered I was using the wrong Bluetooth profile, which caused the audio to cut out and sound scratchy. 
+I discovered I was using the wrong Bluetooth profile, which caused the audio to cut out and sound scratchy. 
 Once I switched to the A2DP (Advanced Audio Distribution Profile) Sink, the sound quality was exactly as I expected.
 
 ```bash
