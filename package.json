@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "@alpinejs/persist": "^3.15.8",
-    "@fortawesome/fontawesome-free": "^7.1.0"
+    "@fortawesome/fontawesome-free": "^7.2.0"
   }
 }
