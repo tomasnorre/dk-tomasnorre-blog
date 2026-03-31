@@ -1,6 +1,4 @@
 import '@fortawesome/fontawesome-free/js/all.min';
-import axios from 'axios';
-window.axios = axios;
 
 import Alpine from "alpinejs";
 import persist from "@alpinejs/persist";

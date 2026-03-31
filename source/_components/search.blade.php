@@ -1,8 +1,9 @@
 <div x-data="{
         init(){
-            window.axios('/index.json')
-                .then(response => {
-                    this.fuse = new window.Fuse(response.data, {
+            fetch('/index.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.fuse = new window.Fuse(data, {
                             minMatchCharLength: 6,
                             keys: ['title', 'snippet', 'categories'],
                         });

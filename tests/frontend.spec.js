@@ -1,6 +1,5 @@
 // @ts-check
 import {test, expect} from '@playwright/test';
-import axios from 'axios';
 import{ parseStringPromise } from 'xml2js';
 
 test('menu', async ({page}) => {
@@ -96,10 +95,10 @@ test.describe('Check Sitemap XML', () => {
     let changefreqs = [];
 
     test.beforeAll(async () => {
-        const response = await axios.get(sitemapUrl, { responseType: 'text' });
+        const response = await fetch(sitemapUrl);
         expect(response.status).toBe(200);
 
-        const xml = response.data;
+        const xml = await response.text();
         const json = await parseStringPromise(xml);
 
         const urls = json.urlset.url;
