@@ -2,7 +2,7 @@
     "name": "tomasnorre/blog",
     "description": "My blog, https://blog.tomasnorre.dk",
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
         "tightenco/jigsaw": "^1.8",
         "samdark/sitemap": "^2.2.1",
         "illuminate/collections": "^12.34",
