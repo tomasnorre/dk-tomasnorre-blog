@@ -20,7 +20,7 @@ I like to host a lot of my things myself for the following reasons
 * costs
 
 One service that I host my self, both in my homelab and on-premise is a Docker Registry. A docker registry is a storage option for docker images. 
-I use docker images for multiple things, the ones being public is stored public, but I have private images too. 
+I use docker images for multiple things, the ones being public are stored public, but I have private images too. 
 
 ## Setting up with Docker Compose
 
