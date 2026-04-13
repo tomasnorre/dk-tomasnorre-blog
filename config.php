@@ -8,6 +8,7 @@ return [
     'siteName' => 'Tomas Norre\'s Blog',
     'siteDescription' => 'Thoughts, Ideas and Random Stuff',
     'siteAuthor' => 'Tomas Norre',
+    'trailing_slash' => true,
 
     // collections
     'collections' => [

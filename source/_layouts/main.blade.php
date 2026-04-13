@@ -8,7 +8,7 @@
 
     <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
     <meta property="og:type" content="{{ $page->type ?? 'website' }}"/>
-    <meta property="og:url" content="{{ $page->getUrl() }}/"/>
+    <meta property="og:url" content="{{ $page->getUrl() }}"/>
     <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}"/>
 
     @if ($page->cover_image)
@@ -26,7 +26,7 @@
     @viteRefresh()
     <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
     <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
-    <link rel="canonical" href="{{ $page->getUrl() }}/">
+    <link rel="canonical" href="{{ $page->getUrl() }}">
 </head>
 
 <body class="flex flex-col justify-between min-h-screen bg-base-100 text-base-content leading-normal font-sans text-lg" :class="darkMode ? 'dark' : ''"

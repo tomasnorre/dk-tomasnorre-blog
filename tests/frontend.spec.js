@@ -118,3 +118,40 @@ test.describe('Check Sitemap XML', () => {
         expect(changefreqs).toContain('monthly');
     });
 });
+
+const urls = [
+    '/',
+    '/about/',
+    '/privacy/',
+    '/blog/oh-my-zsh/',
+    '/blog/categories/arch/',
+    '/blog/wifi-on-arch-linux/',
+    '/blog/wifi-on-arch-linux?ref=test',
+    '/blog/wifi-on-arch-linux/?ref=test',
+];
+test.describe('Canonical URL validation', () => {
+    for (const path of urls) {
+        test(`canonical tag is valid on ${path}`, async ({ page, baseURL }) => {
+            await page.goto(process.env.BASE_URL + path);
+
+            const canonical = page.locator('link[rel="canonical"]');
+            await expect(canonical).toHaveCount(1);
+
+            const href = await canonical.getAttribute('href');
+
+            expect(href).toBeTruthy();
+
+            if (!href) return;
+
+            // Must not end with double slash
+            expect(href.endsWith('//')).toBeFalsy();
+
+            // Must end with exactly one slash
+            expect(href.endsWith('/')).toBeTruthy();
+
+            // Optional: ensure no accidental double slash anywhere after domain
+            const cleaned = href.replace(/^https?:\/\/[^/]+/, '');
+            expect(cleaned.includes('//')).toBeFalsy();
+        });
+    }
+});
