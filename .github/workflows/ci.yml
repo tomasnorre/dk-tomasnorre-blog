@@ -9,44 +9,8 @@ env:
   KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_DOCKER_TOMASNORRE_DK_PASSWORD }}
 
 jobs:
-  deploy-stage:
+  Build:
     runs-on: ubuntu-24.04
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - uses: webfactory/ssh-agent@v0.10.0
-        with:
-          ssh-private-key: "${{ secrets.SSH_PRIVATE_KEY }}"
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-
-      - name: Install Kamal
-        run: gem install kamal
-
-      - name: Build and deploy
-        run: kamal deploy -d staging
-
-  test-stage:
-    runs-on: ubuntu-24.04
-    needs: deploy-stage
-    steps:
-      - uses: 7th-green/gha-playwright@v1.0.3
-      - uses: actions/checkout@v6
-      - name: Install dependencies
-        run: npm ci
-      - name: Install playwright browsers
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: BASE_URL=https://stage.blog.tomasnorre.dk npx playwright test
-
-  deploy-production:
-    runs-on: ubuntu-24.04
-    needs: test-stage
 
     steps:
       - name: Checkout
@@ -67,9 +31,9 @@ jobs:
       - name: Build and deploy
         run: kamal deploy
 
-  test-production:
+  Test:
     runs-on: ubuntu-24.04
-    needs: deploy-production
+    needs: Build
     steps:
       - uses: 7th-green/gha-playwright@v1.0.3
       - uses: actions/checkout@v6
