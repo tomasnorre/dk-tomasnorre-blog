@@ -15,7 +15,7 @@ proxy:
 
 # Credentials for your image host.
 registry:
-  # Specify the registry server, if you're not using Docker Hub
+  # Specify the registry server if you're not using Docker Hub
   server: docker.tomasnorre.dk
   username: registry
 
