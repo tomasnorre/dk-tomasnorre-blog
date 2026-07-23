@@ -46,9 +46,9 @@ sudo sh get-docker.sh
 **Add user**
 
 ```bash
-useradd ghr # Answer the questions asked
-usermod -aG sudo ghr
-sudo usermod -aG docker ghr
+sudo adduser ghr # Answer the questions asked
+sudo usermod -aG sudo ghr
+    sudo usermod -aG docker ghr
 ```
 
 **Install and set up the runner**
