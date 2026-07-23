@@ -9,45 +9,45 @@ env:
   KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_DOCKER_TOMASNORRE_DK_PASSWORD }}
 
 jobs:
-#  Build-STAGE:
-#    runs-on: self-hosted
-#
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v7
-#
-#      - uses: webfactory/ssh-agent@v0.10.0
-#        with:
-#          ssh-private-key: "${{ secrets.SSH_PRIVATE_KEY }}"
-#
-#      - name: Set up Ruby
-#        uses: ruby/setup-ruby@v1
-#        with:
-#          ruby-version: '3.3'
-#
-#      - name: Install Kamal
-#        run: gem install kamal
-#
-#      - name: Build and deploy
-#        run: kamal deploy -d stage
-#
-#  Test-STAGE:
-#    runs-on: self-hosted
-#    needs: Build-STAGE
-#    steps:
-#      - uses: 7th-green/gha-playwright@v1.0.3
-#      - uses: actions/checkout@v7
-#      - name: Install dependencies
-#        run: npm ci
-#      - name: Install playwright browsers
-#        run: npx playwright install --with-deps
-#      - name: Run Playwright tests
-#        run: BASE_URL=http://blog-stage.tomasnorre.dk npx playwright test
-#
+  Build-STAGE:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - uses: webfactory/ssh-agent@v0.10.0
+        with:
+          ssh-private-key: "${{ secrets.SSH_PRIVATE_KEY }}"
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install Kamal
+        run: gem install kamal
+
+      - name: Build and deploy
+        run: kamal deploy -d stage
+
+  Test-STAGE:
+    runs-on: self-hosted
+    needs: Build-STAGE
+    steps:
+      - uses: 7th-green/gha-playwright@v1.0.3
+      - uses: actions/checkout@v7
+      - name: Install dependencies
+        run: npm ci
+      - name: Install playwright browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: BASE_URL=http://blog-stage.tomasnorre.dk npx playwright test
+
 
   Build-PROD:
     runs-on: self-hosted
-    #needs: Test-STAGE
+    needs: Test-STAGE
 
     steps:
       - name: Checkout
