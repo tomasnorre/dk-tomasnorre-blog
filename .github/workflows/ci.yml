@@ -46,7 +46,7 @@ jobs:
 #
 
   Build-PROD:
-    runs-on: self-hosted
+    runs-on: ubuntu-24.04
     #needs: Test-STAGE
 
     steps:
@@ -69,7 +69,7 @@ jobs:
         run: kamal deploy
 
   Test-PROD:
-    runs-on: self-hosted
+    runs-on: ubuntu-24.04
     needs: Build-PROD
     steps:
       - uses: 7th-green/gha-playwright@v1.0.3
