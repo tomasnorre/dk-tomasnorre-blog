@@ -1,7 +1,7 @@
 # Name of your application. Used to uniquely configure containers.
 service: dk-tomasnorre-blog
 # Name of the container image.
-image: tomasnorre/blog
+image: tomasnorre/blog-stage
 
 # Deploy to these servers.
 servers:
