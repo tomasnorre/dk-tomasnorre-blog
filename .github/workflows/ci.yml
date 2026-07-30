@@ -35,7 +35,7 @@ jobs:
     runs-on: self-hosted
     needs: Build-STAGE
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '24'
       - uses: actions/checkout@v7
@@ -74,7 +74,7 @@ jobs:
     runs-on: ubuntu-24.04
     needs: Build-PROD
     steps:
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '24'
       - uses: actions/checkout@v7
