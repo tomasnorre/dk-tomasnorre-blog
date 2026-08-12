@@ -9,7 +9,7 @@
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@tailwindcss/vite": "^4.2",
-    "@tighten/jigsaw-vite-plugin": "^2.0.0",
+    "@tighten/jigsaw-vite-plugin": "^2.1.0",
     "alpinejs": "^3.15.8",
     "fuse.js": "^7.4.2",
     "highlight.js": "^11.11.1",
