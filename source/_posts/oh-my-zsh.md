@@ -27,7 +27,7 @@ sudo pacman -S git zsh curl # arch based distros
 sudo apt install git zsh curl # debian based distros
 ```
 
-** Set you default shell**
+**Set you default shell**
 
 ```bash 
 chsh -s /bin/zsh
@@ -35,7 +35,7 @@ chsh -s /bin/zsh
 
 You might how to logout and back in to have changes take effect. Something restarting the shell is enough.
 
-** Install Oh My Zsh
+**Install Oh My Zsh**
 
 ``` 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
