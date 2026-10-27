@@ -74,6 +74,20 @@
         <a href="https://7th-green.com" aria-label="Link to 7th Green">
             <img src="/assets/img/7th-green-logo.svg" class="h-5 inline mb-1" alt="7th Green logo, showing 3 elephants">
         </a>
+        <a href="https://www.simpleanalytics.com?utm_source=blog.tomasnorre.dk&utm_content=badge" referrerpolicy="origin" target="_blank">
+            <picture id="simpleanalyticsbadge">
+                <source
+                        srcset="https://simpleanalyticsbadges.com/blog.tomasnorre.dk?mode=dark&counter=false&radius=8"
+                        media="(prefers-color-scheme: dark)"
+                />
+                <img
+                        src="https://simpleanalyticsbadges.com/blog.tomasnorre.dk?mode=light&counter=false&radius=8"
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                        crossorigin="anonymous"
+                />
+            </picture>
+        </a>
     </p>
     <div class="flex flex-col md:flex-row justify-center ">
         <span class="md:mr-2">

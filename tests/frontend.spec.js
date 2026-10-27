@@ -155,3 +155,25 @@ test.describe('Canonical URL validation', () => {
         });
     }
 });
+
+test.describe('Simple Analytics badge', () => {
+    for (const path of urls) {
+        test(`on ${path}`, async ({ page, baseURL }) => {
+            await page.goto(process.env.BASE_URL + path);
+
+            // Locate the picture element to verify it exists
+            const badgePicture = page.locator('#simpleanalyticsbadge');
+            await expect(badgePicture).toHaveCount(1);
+
+            // Target the parent anchor tag (which holds the href)
+            const badgeLink = page.locator('a:has(#simpleanalyticsbadge)');
+            const href = await badgeLink.getAttribute('href');
+            expect(href).toContain('simpleanalytics.com');
+
+            // Optional: Verify the image source points to the badge CDN domain
+            const img = badgePicture.locator('img');
+            const src = await img.getAttribute('src');
+            expect(src).toContain('simpleanalyticsbadges.com');
+        });
+    }
+});
