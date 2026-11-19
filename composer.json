@@ -11,6 +11,11 @@
     "require-dev": {
         "roave/security-advisories": "dev-latest"
     },
+    "config": {
+        "platform": {
+            "php": "8.4.28"
+        }
+    },
     "autoload": {
         "psr-4": {
             "App\\Listeners\\": "listeners/"
