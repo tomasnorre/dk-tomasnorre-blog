@@ -5405,12 +5405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "93245209f34084d6f47ab5c072d540e4ce412a1b"
+                "reference": "ea3fd42f04ff44f4cd3ad8c549595baeef0103d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/93245209f34084d6f47ab5c072d540e4ce412a1b",
-                "reference": "93245209f34084d6f47ab5c072d540e4ce412a1b",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea3fd42f04ff44f4cd3ad8c549595baeef0103d3",
+                "reference": "ea3fd42f04ff44f4cd3ad8c549595baeef0103d3",
                 "shasum": ""
             },
             "conflict": {
@@ -5491,6 +5491,7 @@
                 "barrelstrength/sprout-forms": "<3.9",
                 "barryvdh/laravel-translation-manager": "<0.6.8",
                 "barzahlen/barzahlen-php": "<2.0.1",
+                "baserproject/baser-core": "<5.3",
                 "baserproject/basercms": "<=5.2.2",
                 "bassjobsen/bootstrap-3-typeahead": ">4.0.2",
                 "bazaarvoice/bazaarvoice-magento2-ext": ">=8,<9.1.11",
@@ -5508,7 +5509,7 @@
                 "blueways/bw-captcha": ">=4,<5.4.2",
                 "bmarshall511/wordpress_zero_spam": "<5.2.13",
                 "bolt/bolt": "<3.7.2",
-                "bolt/core": "<=4.2",
+                "bolt/core": "<6.1.5",
                 "born05/craft-twofactorauthentication": "<3.3.4",
                 "bottelet/flarepoint": "<2.2.1",
                 "bref/bref": "<2.1.17",
@@ -6031,7 +6032,7 @@
                 "nzo/url-encryptor-bundle": ">=4,<4.3.2|>=5,<5.0.1",
                 "october/backend": "<1.1.2",
                 "october/cms": "<1.0.469|==1.0.469|==1.0.471|==1.1.1",
-                "october/october": "<3.7.14|>=4,<4.1.10|>=4.3,<4.3.4",
+                "october/october": "<3.7.14|>=4,<4.3.4",
                 "october/rain": "<=3.7.13|>=4,<=4.1.9",
                 "october/system": "<3.7.17|>=4,<4.2.23",
                 "oliverklee/phpunit": "<3.5.15",
@@ -6580,8 +6581,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-19T16:19:57+00:00",
-            "published-time": "2026-11-19T16:20:02+00:00"
+            "time": "2026-11-20T05:52:42+00:00",
+            "published-time": "2026-11-20T05:52:47+00:00"
         }
     ],
     "aliases": [],
