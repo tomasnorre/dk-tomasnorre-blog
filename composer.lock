@@ -446,7 +446,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -497,11 +497,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-04T19:46:23+00:00",
-            "published-time": "2026-11-17T14:58:53+00:00"
+            "published-time": "2026-11-24T16:10:22+00:00"
         },
         {
             "name": "illuminate/collections",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -558,11 +558,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-17T09:00:38+00:00",
-            "published-time": "2026-11-17T14:58:59+00:00"
+            "published-time": "2026-11-24T16:10:23+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -605,11 +605,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-10-06T02:42:44+00:00",
-            "published-time": "2026-11-17T14:59:13+00:00"
+            "published-time": "2026-11-24T16:10:25+00:00"
         },
         {
             "name": "illuminate/console",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -673,11 +673,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-17T14:41:10+00:00",
-            "published-time": "2026-11-17T14:59:12+00:00"
+            "published-time": "2026-11-24T16:10:31+00:00"
         },
         {
             "name": "illuminate/container",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -736,11 +736,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-10-20T10:26:12+00:00",
-            "published-time": "2026-11-17T14:59:15+00:00"
+            "published-time": "2026-11-24T16:10:32+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -785,11 +785,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-10-29T13:51:55+00:00",
-            "published-time": "2026-11-17T14:59:20+00:00"
+            "published-time": "2026-11-24T16:10:33+00:00"
         },
         {
             "name": "illuminate/database",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
@@ -860,11 +860,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-17T14:50:42+00:00",
-            "published-time": "2026-11-17T14:59:26+00:00"
+            "published-time": "2026-11-24T16:10:38+00:00"
         },
         {
             "name": "illuminate/events",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -917,11 +917,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-12T15:10:11+00:00",
-            "published-time": "2026-11-17T14:59:33+00:00"
+            "published-time": "2026-11-24T16:10:44+00:00"
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -987,11 +987,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-11T14:33:49+00:00",
-            "published-time": "2026-11-17T14:59:37+00:00"
+            "published-time": "2026-11-24T16:10:43+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1034,11 +1034,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-10-06T02:42:44+00:00",
-            "published-time": "2026-11-17T14:59:51+00:00"
+            "published-time": "2026-11-24T16:10:52+00:00"
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1088,11 +1088,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-10-21T11:30:00+00:00",
-            "published-time": "2026-11-17T15:00:05+00:00"
+            "published-time": "2026-11-24T16:10:59+00:00"
         },
         {
             "name": "illuminate/queue",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -1157,11 +1157,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-12T15:10:11+00:00",
-            "published-time": "2026-11-17T15:00:15+00:00"
+            "published-time": "2026-11-24T16:11:04+00:00"
         },
         {
             "name": "illuminate/reflection",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/reflection.git",
@@ -1209,11 +1209,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-10-06T02:42:44+00:00",
-            "published-time": "2026-11-17T15:00:10+00:00"
+            "published-time": "2026-11-24T16:11:02+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -1289,11 +1289,11 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-13T15:26:53+00:00",
-            "published-time": "2026-11-17T15:00:30+00:00"
+            "published-time": "2026-11-24T16:11:14+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v13.43.0",
+            "version": "v13.44.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -1346,20 +1346,20 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2026-11-17T09:00:38+00:00",
-            "published-time": "2026-11-17T15:00:46+00:00"
+            "published-time": "2026-11-24T16:11:20+00:00"
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.27",
+            "version": "v0.3.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2"
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/abdfc75a1ae6c6f21522daed50da7124cbff09d2",
-                "reference": "abdfc75a1ae6c6f21522daed50da7124cbff09d2",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/72247703c4d4ac1d6122955c90433aa9429bd236",
+                "reference": "72247703c4d4ac1d6122955c90433aa9429bd236",
                 "shasum": ""
             },
             "require": {
@@ -1402,10 +1402,10 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "source": "https://github.com/laravel/prompts/tree/v0.3.27"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.28"
             },
-            "time": "2026-11-09T16:07:10+00:00",
-            "published-time": "2026-11-09T16:09:07+00:00"
+            "time": "2026-11-23T14:41:10+00:00",
+            "published-time": "2026-11-24T16:27:03+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1471,16 +1471,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.10.7",
+            "version": "2.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "8eb53e906fd60c67038d22f1f1cab420ed58b8be"
+                "reference": "681e662a40c805c567f52d603b64d55282ea356c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/8eb53e906fd60c67038d22f1f1cab420ed58b8be",
-                "reference": "8eb53e906fd60c67038d22f1f1cab420ed58b8be",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/681e662a40c805c567f52d603b64d55282ea356c",
+                "reference": "681e662a40c805c567f52d603b64d55282ea356c",
                 "shasum": ""
             },
             "require": {
@@ -1574,8 +1574,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-31T13:35:37+00:00",
-            "published-time": "2026-10-31T13:35:57+00:00"
+            "time": "2026-11-24T15:44:47+00:00",
+            "published-time": "2026-11-24T15:45:01+00:00"
         },
         {
             "name": "league/config",
@@ -5239,16 +5239,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.8.0",
+            "version": "v5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpdotenv/phpdotenv.git",
-                "reference": "96149103e62ac67e915f6d2ef59b72dee2e011e0"
+                "reference": "ba37876e98122ca15151247ce1187d20ee8bf4e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpdotenv/phpdotenv/zipball/96149103e62ac67e915f6d2ef59b72dee2e011e0",
-                "reference": "96149103e62ac67e915f6d2ef59b72dee2e011e0",
+                "url": "https://api.github.com/repos/phpdotenv/phpdotenv/zipball/ba37876e98122ca15151247ce1187d20ee8bf4e0",
+                "reference": "ba37876e98122ca15151247ce1187d20ee8bf4e0",
                 "shasum": ""
             },
             "require": {
@@ -5307,7 +5307,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpdotenv/phpdotenv/issues",
-                "source": "https://github.com/phpdotenv/phpdotenv/tree/v5.8.0"
+                "source": "https://github.com/phpdotenv/phpdotenv/tree/v5.8.1"
             },
             "funding": [
                 {
@@ -5319,8 +5319,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-25T16:26:19+00:00",
-            "published-time": "2026-10-25T16:26:50+00:00"
+            "time": "2026-11-23T00:53:11+00:00",
+            "published-time": "2026-11-23T00:53:39+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -5405,12 +5405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ea3fd42f04ff44f4cd3ad8c549595baeef0103d3"
+                "reference": "264dc9a03aa6471c996bf1f633b49712a777d96a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea3fd42f04ff44f4cd3ad8c549595baeef0103d3",
-                "reference": "ea3fd42f04ff44f4cd3ad8c549595baeef0103d3",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/264dc9a03aa6471c996bf1f633b49712a777d96a",
+                "reference": "264dc9a03aa6471c996bf1f633b49712a777d96a",
                 "shasum": ""
             },
             "conflict": {
@@ -5487,6 +5487,7 @@
                 "bacula-web/bacula-web": "<9.7.1",
                 "badaso/core": "<=2.9.11",
                 "bagisto/bagisto": "<=2.3.15",
+                "baldinof/roadrunner-bundle": ">=3.0.1,<3.2.4",
                 "barrelstrength/sprout-base-email": "<1.2.7",
                 "barrelstrength/sprout-forms": "<3.9",
                 "barryvdh/laravel-translation-manager": "<0.6.8",
@@ -5528,6 +5529,7 @@
                 "cakephp/database": ">=3,<4.5.12|>=4.6,<4.6.5|>=5,<5.1.10|>=5.2,<5.2.15|>=5.3,<5.3.7",
                 "cakephp/debug_kit": "<4.10.3|>=5,<5.2.4",
                 "cakephp/queue": ">=0.1.10,<2.3.1",
+                "cakephp/twig-view": "<1.3.3|>=2,<2.1.2",
                 "cardgate/magento2": "<2.0.33",
                 "cardgate/woocommerce": "<=3.1.15",
                 "cart2quote/module-quotation": ">=4.1.6,<4.4.6|>=5,<5.4.4",
@@ -5730,6 +5732,8 @@
                 "flarum/tags": "<=0.1.0.0-beta13",
                 "flightphp/core": "<3.18.1",
                 "floriangaerber/magnesium": "<0.3.1",
+                "flowd/phirewall": ">=0.1,<0.11.1",
+                "flowd/phirewall-preset-owasp-crs": ">=0.1,<0.11.1",
                 "fluidtypo3/vhs": "<5.1.1",
                 "flux-se/sylius-stripe-plugin": ">=1,<1.2|>=2,<2.0.3|>=2.1,<2.1.1",
                 "fof/byobu": ">=0.3.0.0-beta2,<1.1.7",
@@ -5975,6 +5979,7 @@
                 "microweber/microweber": "<=2.0.20",
                 "mikehaertl/php-shellcommand": "<1.6.1",
                 "mineadmin/mineadmin": "<3.2.0.0-alpha2",
+                "mini4work/webserver": ">=0.0.1,<1.2",
                 "miniorange/miniorange-saml": "<1.4.3",
                 "miraheze/ts-portal": "<=33",
                 "mittwald/typo3_forum": "<1.2.1",
@@ -6017,7 +6022,7 @@
                 "nette/application": ">=2,<2.0.19|>=2.1,<2.1.13|>=2.2,<2.2.10|>=2.3,<2.3.14|>=2.4,<2.4.16|>=3,<3.0.6",
                 "nette/nette": ">=2,<2.0.19|>=2.1,<2.1.13",
                 "neuron-core/neuron-ai": "<=2.8.11",
-                "nilsteampassnet/teampass": "<3.1.3.1-dev",
+                "nilsteampassnet/teampass": "<3.2.2",
                 "nitsan/ns-backup": "<13.0.1",
                 "nitsan/ns-t3ai": "<14.0.2",
                 "nonfiction/nterchange": "<4.1.1",
@@ -6129,7 +6134,7 @@
                 "pocketmine/pocketmine-mp": "<5.44.2",
                 "pocketmine/raklib": ">=0.14,<0.14.6|>=0.15,<0.15.1",
                 "pontedilana/php-weasyprint": "<=2.5.1",
-                "poweradmin/poweradmin": "<4.2.5|>=4.3,<4.3.4",
+                "poweradmin/poweradmin": "<4.2.6|>=4.3,<4.3.5|>=4.4,<4.4.1",
                 "predis/predis": ">=3.0.0.0-RC1,<3.3",
                 "pressbooks/pressbooks": "<5.18",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
@@ -6214,7 +6219,7 @@
                 "silverstripe/cms": "<6.2.1",
                 "silverstripe/comments": ">=1.3,<3.1.1",
                 "silverstripe/forum": "<0.6.2|>=0.7,<0.7.4",
-                "silverstripe/framework": "<6.2.13",
+                "silverstripe/framework": "<6.2.15|>=6.3,<6.3.10",
                 "silverstripe/graphql": ">=2,<2.0.5|>=3,<3.8.2|>=4,<4.3.7|>=5,<5.1.3",
                 "silverstripe/hybridsessions": ">=1,<2.4.1|>=2.5,<2.5.1",
                 "silverstripe/mfa": "<6",
@@ -6225,6 +6230,7 @@
                 "silverstripe/silverstripe-omnipay": "<2.5.2|>=3,<3.0.2|>=3.1,<3.1.4|>=3.2,<3.2.1",
                 "silverstripe/subsites": ">=2,<2.6.1",
                 "silverstripe/taxonomy": ">=1.3,<1.3.1|>=2,<2.0.1",
+                "silverstripe/template-engine": "<1.0.3",
                 "silverstripe/userforms": "<7.1.4",
                 "silverstripe/versioned": "<3.2.1",
                 "silverstripe/versioned-admin": ">=1,<1.11.1",
@@ -6261,7 +6267,9 @@
                 "spencer14420/sp-php-email-handler": "<1",
                 "spipu/html2pdf": "<5.2.8",
                 "spiral/roadrunner": "<2025.1",
-                "spomky-labs/otphp": "<11.4.3",
+                "spomky-labs/cbor-php": "<3.3.5",
+                "spomky-labs/otphp": "<11.4.4|>=11.5,<11.5.1",
+                "spomky-labs/pki-framework": "<1.6.2",
                 "spoon/library": "<1.4.1",
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": "<3.13.6|>=4,<4.0.2",
@@ -6341,8 +6349,8 @@
                 "symfony/twig-bridge": ">=2,<4.4.51|>=5,<5.4.31|>=6,<6.3.8|>=6.4.24,<6.4.40",
                 "symfony/twilio-notifier": ">=6.4,<6.4.40|>=7,<7.4.12|>=8,<8.0.12",
                 "symfony/ux-autocomplete": "<2.36|>=3,<3.1",
-                "symfony/ux-icons": ">=2.17,<2.36.1|>=3,<3.2",
-                "symfony/ux-live-component": "<2.36|>=3,<3.1",
+                "symfony/ux-icons": ">=2.17,<2.36.3|>=3,<3.8.1",
+                "symfony/ux-live-component": "<2.36.3|>=3,<3.8.1",
                 "symfony/ux-toolkit": ">=2.32,<2.36.1|>=3,<3.2",
                 "symfony/ux-twig-component": "<2.25.1",
                 "symfony/validator": "<5.4.56|>=6,<6.4.50|>=7,<7.4.23|>=8,<8.1.11",
@@ -6384,9 +6392,10 @@
                 "ttskch/pagination-service-provider": "<1",
                 "twbs/bootstrap": "<3.4.1|>=4,<4.3.1",
                 "twig/cssinliner-extra": "<3.26",
+                "twig/html-extra": ">=3.12,<3.31.1",
                 "twig/intl-extra": "<3.26",
-                "twig/markdown-extra": "<3.26",
-                "twig/twig": "<3.27",
+                "twig/markdown-extra": "<3.31.1",
+                "twig/twig": "<3.31.1",
                 "typicms/core": "<12.0.5|>=13,<13.0.9|>=14,<14.0.27|>=15,<15.0.29|>=16,<16.1.7",
                 "typo3/cms": "<9.5.29|>=10,<10.4.35|>=11,<11.5.23|>=12,<12.2",
                 "typo3/cms-backend": "<10.4.63|>=11,<11.5.57|>=12,<12.4.52|>=13,<13.4.40|>=14,<14.3.12",
@@ -6445,14 +6454,27 @@
                 "wallabag/wallabag": "<2.6.11",
                 "wanglelecc/laracms": "<=1.0.3",
                 "wapplersystems/a21glossary": "<=0.4.10",
-                "web-auth/webauthn-framework": ">=3.3,<3.3.4|>=4.5,<4.9|>=5.2,<5.2.4|>=5.3,<5.3.1",
-                "web-auth/webauthn-lib": ">=4.5,<5.3.5",
-                "web-auth/webauthn-symfony-bundle": "<5.3.4",
+                "web-auth/cose-lib": "<4.7.2",
+                "web-auth/metadata-service": ">=3,<4.9",
+                "web-auth/webauthn-framework": ">=1.2,<5.3.15",
+                "web-auth/webauthn-lib": ">=2.1,<5.3.13",
+                "web-auth/webauthn-stimulus": ">=5.3,<5.3.15",
+                "web-auth/webauthn-symfony-bundle": "<5.3.15",
                 "web-feet/coastercms": "==5.5",
                 "web-token/jwt-bundle": "<3.4.10|>=4,<4.0.7|>=4.1,<4.1.7",
-                "web-token/jwt-experimental": "<4.1.7",
-                "web-token/jwt-framework": "<3.4.10|>=4,<4.0.7|>=4.1,<4.1.7",
-                "web-token/jwt-library": "<3.4.10|>=4,<4.0.7|>=4.1,<4.1.7",
+                "web-token/jwt-core": "<=3.2.10",
+                "web-token/jwt-encryption": "<=3.2.10",
+                "web-token/jwt-encryption-algorithm-aesgcm": "<=3.2.10",
+                "web-token/jwt-encryption-algorithm-aesgcmkw": "<=3.2.10",
+                "web-token/jwt-encryption-algorithm-aeskw": "<=3.2.10",
+                "web-token/jwt-encryption-algorithm-ecdh-es": "<=3.2.10",
+                "web-token/jwt-encryption-algorithm-experimental": "<=3.2.10",
+                "web-token/jwt-encryption-algorithm-rsa": "<=3.2.10",
+                "web-token/jwt-experimental": "<4.1.11|>=4.2,<4.2.6",
+                "web-token/jwt-framework": "<3.4.13|>=4,<4.0.9|>=4.1,<4.1.11|>=4.2,<4.2.6",
+                "web-token/jwt-library": "<3.4.13|>=4,<4.0.9|>=4.1,<4.1.11|>=4.2,<4.2.6",
+                "web-token/jwt-signature": "<=3.2.10",
+                "web-token/jwt-signature-algorithm-rsa": "<=3.2.10",
                 "web-tp3/wec_map": "<3.0.3",
                 "webbuilders-group/silverstripe-kapost-bridge": "<0.4",
                 "webcoast/deferred-image-processing": "<1.0.2",
@@ -6581,8 +6603,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-20T05:52:42+00:00",
-            "published-time": "2026-11-20T05:52:47+00:00"
+            "time": "2026-11-24T19:57:36+00:00",
+            "published-time": "2026-11-24T19:57:42+00:00"
         }
     ],
     "aliases": [],
